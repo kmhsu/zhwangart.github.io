@@ -120,7 +120,7 @@
     <link href="https://zhwangart.github.io/2018/11/30/Ocean/"/>
     <id>https://zhwangart.github.io/2018/11/30/Ocean/</id>
     <published>2018-11-30T03:13:00.000Z</published>
-    <updated>2019-03-15T09:21:06.565Z</updated>
+    <updated>2019-03-26T10:11:43.747Z</updated>
     
     <summary type="html">
     
@@ -132,6 +132,26 @@
       <category term="Ocean" scheme="https://zhwangart.github.io/tags/Ocean/"/>
     
       <category term="Hexo" scheme="https://zhwangart.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown 基本语法在 Ocean 中的展现形式</title>
+    <link href="https://zhwangart.github.io/2018/11/29/Markdown/"/>
+    <id>https://zhwangart.github.io/2018/11/29/Markdown/</id>
+    <published>2018-11-29T03:13:00.000Z</published>
+    <updated>2019-03-26T10:04:48.379Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Markdown 基本语法在 Ocean 中的展现形式，此文完全是从 &lt;a href=&quot;https://github.com/younghz/Markdown&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;younghz/Markdown&lt;/a&gt; Clone 下来的，为了为自己查阅语法方便，也为想要使用 Ocean 的同学们提供示例，进而快速认知 Ocean 是否适合你的 Hexo ！&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Ocean" scheme="https://zhwangart.github.io/tags/Ocean/"/>
+    
+      <category term="Markdown" scheme="https://zhwangart.github.io/tags/Markdown/"/>
     
   </entry>
   
