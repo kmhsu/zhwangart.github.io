@@ -973,7 +973,8 @@ img {
   line-height: line-height;
 }
 .article-entry p,
-.article-entry table {
+.article-entry table,
+.article-entry blockquote {
   margin: 1.5rem 0;
 }
 .article-entry img,
@@ -1007,7 +1008,6 @@ img {
 }
 .article-entry blockquote {
   display: block;
-  margin: 0;
   padding: 0 1.5rem;
   width: 100%;
   overflow: auto;

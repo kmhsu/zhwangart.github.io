@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2019-03-19T08:16:39.703Z</updated>
+  <updated>2019-03-26T07:24:47.933Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -17,20 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>MacOS Sublime 插件安装与删除</title>
+    <title>macOS Sublime Text 插件安装与删除</title>
     <link href="https://zhwangart.github.io/2019/03/19/SublimeText-LessSass-Highlight/"/>
     <id>https://zhwangart.github.io/2019/03/19/SublimeText-LessSass-Highlight/</id>
     <published>2019-03-19T02:42:22.000Z</published>
-    <updated>2019-03-19T08:16:39.703Z</updated>
+    <updated>2019-03-26T07:24:47.933Z</updated>
     
     <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;Sublime Text 是收费软件，但可以无限期试用，作者很厚道地给用户们提供了免费无限制无限期的试用权，它只会偶尔提醒一下你木有购买，而且频率也很低，仅此而已。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先需要安装 Package Control 因为 Sublime Text 的大部分插件都要借助这个工具来安装。翻译 &lt;a href=&quot;https://packagecontrol.io/installation#st3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Package Control&lt;/a&gt; 介绍的最简单的安装方法是通过 Sublime Text 控制台。可通过 control + ～ 快捷键或 View &amp;gt; Show Console 菜单访问控制台。 打开后，将适用于您的 Sublime Text 版本的 Python 代码粘贴到控制台中。&lt;br&gt;
     
     </summary>
     
     
       <category term="MacOS" scheme="https://zhwangart.github.io/tags/MacOS/"/>
     
-      <category term="Sublime" scheme="https://zhwangart.github.io/tags/Sublime/"/>
+      <category term="Sublime Text" scheme="https://zhwangart.github.io/tags/Sublime-Text/"/>
     
   </entry>
   
