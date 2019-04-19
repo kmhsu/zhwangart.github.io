@@ -2004,3 +2004,91 @@ pre .javascript .function {
 .logo img {
   width: 4.8rem;
 }
+.totop {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  width: 3.2rem;
+  height: 3.2rem;
+  -webkit-border-radius: 3.2rem;
+  -moz-border-radius: 3.2rem;
+  border-radius: 3.2rem;
+  background-color: #f4f4f4;
+  line-height: 3rem;
+}
+.totop:hover > i {
+  animation: rocket 0.3s ease-in-out;
+}
+@-moz-keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3.2rem);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(3.2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3.2rem);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(3.2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@-o-keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3.2rem);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(3.2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rocket {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-3.2rem);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(3.2rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
