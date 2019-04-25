@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2019-04-19T07:29:48.693Z</updated>
+  <updated>2019-04-24T10:41:13.412Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>macOS Sublime Text 插件安装与删除</title>
+    <title>一些常用的移动端的 meta 属性设置</title>
+    <link href="https://zhwangart.github.io/2019/04/24/Mobile-html-meta-property-settings/"/>
+    <id>https://zhwangart.github.io/2019/04/24/Mobile-html-meta-property-settings/</id>
+    <published>2019-04-24T10:41:13.412Z</published>
+    <updated>2019-04-24T10:41:13.412Z</updated>
+    
+    <summary type="html">
+    
+      &lt;script&gt;
+    var svg = Snap(&#39;#svg&#39;);
+    svg.select(&#39;circle&#39;); // 选择
+&lt;/script&gt;
+
+&lt;p&gt;网传是阿里前端工程师总结的关于移动端 HTML5 meta 标签的属性设置，仔细阅读原文会发现代码注释一会在上面一会在下面，所以，我把它整理了如下…&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="html5" scheme="https://zhwangart.github.io/tags/html5/"/>
+    
+      <category term="meta" scheme="https://zhwangart.github.io/tags/meta/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MacOS Sublime Text 插件安装与删除</title>
     <link href="https://zhwangart.github.io/2019/03/19/SublimeText-PackageControl/"/>
     <id>https://zhwangart.github.io/2019/03/19/SublimeText-PackageControl/</id>
     <published>2019-03-19T02:42:22.000Z</published>
-    <updated>2019-04-19T07:29:48.693Z</updated>
+    <updated>2019-04-25T03:14:01.225Z</updated>
     
     <summary type="html">
     
