@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2019-04-26T02:33:17.801Z</updated>
+  <updated>2019-04-26T06:50:55.764Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://zhwangart.github.io/2019/04/24/Mobile-html-meta-property-settings/"/>
     <id>https://zhwangart.github.io/2019/04/24/Mobile-html-meta-property-settings/</id>
     <published>2019-04-24T10:41:13.412Z</published>
-    <updated>2019-04-26T02:33:17.801Z</updated>
+    <updated>2019-04-26T06:50:55.764Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://www.tutorialrepublic.com/lib/images/html-illustration.png&quot; alt=&quot;html5&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;http://source.zhwangart.com/hexo/post/HTML5_BANNER.svg&quot; alt=&quot;html5&quot;&gt;&lt;/p&gt;
 &lt;p&gt;网传是阿里前端工程师总结的关于移动端 HTML5 meta 标签的属性设置，仔细阅读原文会发现代码注释一会在上面一会在下面，所以，我把它整理了如下…&lt;br&gt;
     
     </summary>
