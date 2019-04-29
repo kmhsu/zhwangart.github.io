@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2019-04-28T08:44:32.198Z</updated>
+  <updated>2019-04-29T08:55:48.893Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>干脆面做了 LOGO</title>
+    <link href="https://zhwangart.github.io/2019/04/29/Little-raccoon/"/>
+    <id>https://zhwangart.github.io/2019/04/29/Little-raccoon/</id>
+    <published>2019-04-29T08:55:48.893Z</published>
+    <updated>2019-04-29T08:55:48.893Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;产品名称为 &lt;strong&gt;稻壳阅读器&lt;/strong&gt; 的 LOGO 设计，一不小心就做成干脆面了。&lt;br&gt;&lt;img src=&quot;http://source.zhwangart.com/hexo/post/DaokeReader.svg&quot; alt=&quot;稻壳阅读器&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="稻壳儿阅读器" scheme="https://zhwangart.github.io/tags/%E7%A8%BB%E5%A3%B3%E5%84%BF%E9%98%85%E8%AF%BB%E5%99%A8/"/>
+    
+      <category term="干脆面" scheme="https://zhwangart.github.io/tags/%E5%B9%B2%E8%84%86%E9%9D%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>一些常用的移动端的 meta 属性设置</title>
