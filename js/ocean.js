@@ -189,3 +189,13 @@
   });
 
 })(jQuery);
+
+// (function($) {
+//   var image  = new Image();
+//   image.src  = path;
+//   var width  = image.width;
+//   var height = image.height;
+//   image.onload = function() {
+//     $('.image-size').attr({width: width, height: height})
+//   };
+// })(jQuery);
