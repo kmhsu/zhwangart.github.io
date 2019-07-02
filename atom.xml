@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2019-06-12T02:58:49.783Z</updated>
+  <updated>2019-07-02T10:08:02.714Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于 Ocean 使用中的问题</title>
+    <link href="https://zhwangart.github.io/2019/07/02/Ocean-Issues/"/>
+    <id>https://zhwangart.github.io/2019/07/02/Ocean-Issues/</id>
+    <published>2019-07-02T10:08:02.714Z</published>
+    <updated>2019-07-02T10:08:02.714Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文将 &lt;a href=&quot;https://zhwangart.github.io/2018/11/30/Ocean/&quot;&gt;Ocean 中文文档&lt;/a&gt; 下边评论区中，一些 Hexo 博主们在使用 Ocean 时遇到的比较明显的问题整理归纳，当然有些问题并不是出在 Ocean 主题上，而是因为没有认真阅读 Hexo 的文档，我也简单写一下。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Ocean" scheme="https://zhwangart.github.io/tags/Ocean/"/>
+    
+      <category term="Hexo" scheme="https://zhwangart.github.io/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Canonet QL17 G-III 中文</title>
@@ -184,7 +204,7 @@
     <link href="https://zhwangart.github.io/2018/11/30/Ocean/"/>
     <id>https://zhwangart.github.io/2018/11/30/Ocean/</id>
     <published>2018-11-30T03:13:00.000Z</published>
-    <updated>2019-05-05T10:32:26.221Z</updated>
+    <updated>2019-07-02T09:32:23.576Z</updated>
     
     <summary type="html">
     
