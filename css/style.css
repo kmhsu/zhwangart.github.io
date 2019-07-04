@@ -1994,6 +1994,47 @@ pre .javascript .function {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+.macbook {
+  position: relative;
+}
+.macbook .macbook-screen {
+  position: relative;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #fff;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+  border-width: 2rem 1.25rem 1.25rem;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.15), 0 0 0.5rem rgba(0,0,0,0.15) inset;
+}
+.macbook .macbook-keyboard {
+  position: relative;
+  box-sizing: content-box;
+  background-color: #fff;
+  border-bottom: solid 0.75rem #f2f2f2;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin: -0.5rem -5rem 0;
+  height: 0.5rem;
+  box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.15);
+}
+.macbook .macbook-keyboard::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #f2f2f2, #fff, #f2f2f2);
+  box-shadow: 0 0 0.1rem rgba(0,0,0,0.05) inset;
+  width: 20%;
+  height: 0.3rem;
+  -webkit-border-radius: 0.125rem;
+  -moz-border-radius: 0.125rem;
+  border-radius: 0.125rem;
+}
+.macbook-wrap {
+  padding: 1rem 9rem;
+}
 .navbar {
   position: relative;
   padding-top: 3rem;
