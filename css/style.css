@@ -2035,6 +2035,100 @@ pre .javascript .function {
 .macbook-wrap {
   padding: 1rem 9rem;
 }
+.scrolling-wrap {
+  min-height: 30rem;
+  overflow: hidden;
+}
+.scrolling {
+  position: absolute;
+  top: 30rem;
+  width: 100%;
+  animation: scrolling-animation 10s ease-in-out 1s infinite;
+}
+@-moz-keyframes scrolling-animation {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 0;
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-35%);
+  }
+  60% {
+    transform: translateY(-75%);
+  }
+  90% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes scrolling-animation {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 0;
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-35%);
+  }
+  60% {
+    transform: translateY(-75%);
+  }
+  90% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@-o-keyframes scrolling-animation {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 0;
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-35%);
+  }
+  60% {
+    transform: translateY(-75%);
+  }
+  90% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes scrolling-animation {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: 0;
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-35%);
+  }
+  60% {
+    transform: translateY(-75%);
+  }
+  90% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 .navbar {
   position: relative;
   padding-top: 3rem;
