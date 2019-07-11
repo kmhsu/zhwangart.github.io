@@ -38,3 +38,8 @@ figure.forrestgump figcaption {
     padding: 0 2rem;
   }
 }
+.notfound-link {
+  position: absolute;
+  z-index: 9;
+  margin-top: 2rem;
+}
