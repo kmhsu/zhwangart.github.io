@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2019-07-10T05:39:15.198Z</updated>
+  <updated>2019-07-11T06:51:00.823Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>又一个稻壳阅读器的 LOGO 设计</title>
-    <link href="https://zhwangart.github.io/2019/07/03/Bird/"/>
-    <id>https://zhwangart.github.io/2019/07/03/Bird/</id>
+    <link href="https://zhwangart.github.io/Bird.html"/>
+    <id>https://zhwangart.github.io/Bird.html</id>
     <published>2019-07-03T03:33:38.000Z</published>
-    <updated>2019-07-10T05:39:15.198Z</updated>
+    <updated>2019-07-11T06:51:00.823Z</updated>
     
     <summary type="html">
     
@@ -30,11 +30,11 @@
     </summary>
     
     
+      <category term="Design" scheme="https://zhwangart.github.io/tags/Design/"/>
+    
       <category term="Bird" scheme="https://zhwangart.github.io/tags/Bird/"/>
     
       <category term="Cloud" scheme="https://zhwangart.github.io/tags/Cloud/"/>
-    
-      <category term="Logo" scheme="https://zhwangart.github.io/tags/Logo/"/>
     
       <category term="稻壳阅读器" scheme="https://zhwangart.github.io/tags/%E7%A8%BB%E5%A3%B3%E9%98%85%E8%AF%BB%E5%99%A8/"/>
     
@@ -42,14 +42,14 @@
   
   <entry>
     <title>关于 Ocean 使用中的问题</title>
-    <link href="https://zhwangart.github.io/2019/07/02/Ocean-Issues/"/>
-    <id>https://zhwangart.github.io/2019/07/02/Ocean-Issues/</id>
+    <link href="https://zhwangart.github.io/Ocean-Issues.html"/>
+    <id>https://zhwangart.github.io/Ocean-Issues.html</id>
     <published>2019-07-02T03:11:11.000Z</published>
-    <updated>2019-07-10T08:01:33.731Z</updated>
+    <updated>2019-07-11T06:54:49.899Z</updated>
     
     <summary type="html">
     
-      Ocean 是一款极简的，集成了 Gitalk 评论功能的 Hexo 主题。
+      Ocean 是一款极简的，集成了 Gitalk 评论功能的轻量级 Hexo 主题。
     
     </summary>
     
@@ -58,18 +58,20 @@
     
       <category term="Hexo" scheme="https://zhwangart.github.io/tags/Hexo/"/>
     
+      <category term="Theme" scheme="https://zhwangart.github.io/tags/Theme/"/>
+    
   </entry>
   
   <entry>
     <title>Canonet QL17 G-III 中文</title>
-    <link href="https://zhwangart.github.io/2019/05/07/CANONET-QL17-GIII-DOC/"/>
-    <id>https://zhwangart.github.io/2019/05/07/CANONET-QL17-GIII-DOC/</id>
+    <link href="https://zhwangart.github.io/CANONET-QL17-GIII-DOC.html"/>
+    <id>https://zhwangart.github.io/CANONET-QL17-GIII-DOC.html</id>
     <published>2019-05-07T02:34:49.000Z</published>
-    <updated>2019-07-10T07:53:11.814Z</updated>
+    <updated>2019-07-11T06:54:17.448Z</updated>
     
     <summary type="html">
     
-      Canonet QL17 G-III 中文说明书，这应该是最完整的中文图文说明书了吧！
+      最完整的 Canonet QL17 G-III 中文图文说明书。
     
     </summary>
     
@@ -84,17 +86,19 @@
   
   <entry>
     <title>干脆面做了 LOGO</title>
-    <link href="https://zhwangart.github.io/2019/04/29/Little-raccoon/"/>
-    <id>https://zhwangart.github.io/2019/04/29/Little-raccoon/</id>
+    <link href="https://zhwangart.github.io/Little-raccoon.html"/>
+    <id>https://zhwangart.github.io/Little-raccoon.html</id>
     <published>2019-04-29T11:04:29.000Z</published>
-    <updated>2019-07-10T07:57:26.349Z</updated>
+    <updated>2019-07-11T06:53:38.370Z</updated>
     
     <summary type="html">
     
-      产品名称为稻壳阅读器的 LOGO 设计，一不小心就做成干脆面了，因油炸食品不够商务而没入镜。
+      为赵总的 稻壳阅读器 设计的 LOGO ，一不小心就做成“干脆面”了，因油炸食品不够商务而没入镜。
     
     </summary>
     
+    
+      <category term="Design" scheme="https://zhwangart.github.io/tags/Design/"/>
     
       <category term="稻壳儿阅读器" scheme="https://zhwangart.github.io/tags/%E7%A8%BB%E5%A3%B3%E5%84%BF%E9%98%85%E8%AF%BB%E5%99%A8/"/>
     
@@ -104,10 +108,10 @@
   
   <entry>
     <title>一些常用的移动端的 meta 属性设置</title>
-    <link href="https://zhwangart.github.io/2019/04/26/Mobile-html-meta-property-settings/"/>
-    <id>https://zhwangart.github.io/2019/04/26/Mobile-html-meta-property-settings/</id>
+    <link href="https://zhwangart.github.io/Mobile-html-meta-property-settings.html"/>
+    <id>https://zhwangart.github.io/Mobile-html-meta-property-settings.html</id>
     <published>2019-04-26T10:11:49.000Z</published>
-    <updated>2019-05-05T09:52:54.435Z</updated>
+    <updated>2019-07-11T06:54:58.196Z</updated>
     
     <summary type="html">
     
@@ -125,10 +129,10 @@
   
   <entry>
     <title>MacOS Sublime Text 插件安装与删除</title>
-    <link href="https://zhwangart.github.io/2019/03/19/SublimeText-PackageControl/"/>
-    <id>https://zhwangart.github.io/2019/03/19/SublimeText-PackageControl/</id>
+    <link href="https://zhwangart.github.io/SublimeText-PackageControl.html"/>
+    <id>https://zhwangart.github.io/SublimeText-PackageControl.html</id>
     <published>2019-03-19T02:42:22.000Z</published>
-    <updated>2019-05-05T08:15:34.541Z</updated>
+    <updated>2019-07-11T06:56:50.393Z</updated>
     
     <summary type="html">
     
@@ -148,10 +152,10 @@
   
   <entry>
     <title>精心挑选的 Photoshop 45 个快捷键</title>
-    <link href="https://zhwangart.github.io/2019/02/22/Photosho-shortcut-45/"/>
-    <id>https://zhwangart.github.io/2019/02/22/Photosho-shortcut-45/</id>
+    <link href="https://zhwangart.github.io/Photosho-shortcut-45.html"/>
+    <id>https://zhwangart.github.io/Photosho-shortcut-45.html</id>
     <published>2019-02-22T02:42:00.000Z</published>
-    <updated>2019-07-10T08:02:02.506Z</updated>
+    <updated>2019-07-11T06:57:15.379Z</updated>
     
     <summary type="html">
     
@@ -166,10 +170,10 @@
   
   <entry>
     <title>CSS:filter 学习笔记</title>
-    <link href="https://zhwangart.github.io/2018/12/26/CSS-filter/"/>
-    <id>https://zhwangart.github.io/2018/12/26/CSS-filter/</id>
+    <link href="https://zhwangart.github.io/CSS-filter.html"/>
+    <id>https://zhwangart.github.io/CSS-filter.html</id>
     <published>2018-12-26T02:03:00.000Z</published>
-    <updated>2019-03-14T08:11:43.000Z</updated>
+    <updated>2019-07-11T06:51:31.029Z</updated>
     
     <summary type="html">
     
@@ -183,33 +187,15 @@
   </entry>
   
   <entry>
-    <title>哄宝宝顺口溜30条</title>
-    <link href="https://zhwangart.github.io/2018/12/21/%E5%93%84%E5%AE%9D%E5%AE%9D%E9%A1%BA%E5%8F%A3%E6%BA%9C30%E9%A6%96/"/>
-    <id>https://zhwangart.github.io/2018/12/21/哄宝宝顺口溜30首/</id>
-    <published>2018-12-21T09:02:16.000Z</published>
-    <updated>2019-03-14T08:11:43.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;哄宝宝顺口溜一共30条，一天一条，一个月不重样！不要每天都是：小白兔，白又白，两只耳朵竖起来，爱吃萝卜和青菜，蹦蹦跳跳真可爱！&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="宝宝" scheme="https://zhwangart.github.io/tags/%E5%AE%9D%E5%AE%9D/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Gitalk 的使用</title>
-    <link href="https://zhwangart.github.io/2018/12/06/Gitalk/"/>
-    <id>https://zhwangart.github.io/2018/12/06/Gitalk/</id>
+    <link href="https://zhwangart.github.io/Gitalk.html"/>
+    <id>https://zhwangart.github.io/Gitalk.html</id>
     <published>2018-12-06T07:11:49.000Z</published>
-    <updated>2019-06-13T09:32:20.708Z</updated>
+    <updated>2019-07-11T06:51:45.439Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;由于我比较笨还英文不好，所以按照 &lt;a href=&quot;https://github.com/gitalk/gitalk&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Gitalk&lt;/a&gt; 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。&lt;br&gt;这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！&lt;br&gt;
+      Gitalk 使用详解，遇到的问题处理方法。
     
     </summary>
     
@@ -224,14 +210,14 @@
   
   <entry>
     <title>Ocean 中文文档</title>
-    <link href="https://zhwangart.github.io/2018/11/30/Ocean/"/>
-    <id>https://zhwangart.github.io/2018/11/30/Ocean/</id>
+    <link href="https://zhwangart.github.io/Ocean.html"/>
+    <id>https://zhwangart.github.io/Ocean.html</id>
     <published>2018-11-30T03:13:00.000Z</published>
-    <updated>2019-07-10T08:00:27.894Z</updated>
+    <updated>2019-07-11T06:38:25.077Z</updated>
     
     <summary type="html">
     
-      Ocean 是一款极简的，集成了 Gitalk 评论功能的 Hexo 主题。
+      Ocean 是一款极简的，集成了 Gitalk 评论功能的轻量级 Hexo 主题。
     
     </summary>
     
@@ -240,14 +226,16 @@
     
       <category term="Hexo" scheme="https://zhwangart.github.io/tags/Hexo/"/>
     
+      <category term="Theme" scheme="https://zhwangart.github.io/tags/Theme/"/>
+    
   </entry>
   
   <entry>
     <title>Markdown 基本语法在 Ocean 中的展现形式</title>
-    <link href="https://zhwangart.github.io/2018/11/29/Markdown/"/>
-    <id>https://zhwangart.github.io/2018/11/29/Markdown/</id>
+    <link href="https://zhwangart.github.io/Markdown.html"/>
+    <id>https://zhwangart.github.io/Markdown.html</id>
     <published>2018-11-29T03:13:00.000Z</published>
-    <updated>2019-05-07T02:44:36.894Z</updated>
+    <updated>2019-07-11T06:55:03.483Z</updated>
     
     <summary type="html">
     
@@ -264,10 +252,10 @@
   
   <entry>
     <title>iterm2 快捷键</title>
-    <link href="https://zhwangart.github.io/2018/10/23/iterm2-%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    <id>https://zhwangart.github.io/2018/10/23/iterm2-快捷键/</id>
+    <link href="https://zhwangart.github.io/iterm2-%E5%BF%AB%E6%8D%B7%E9%94%AE.html"/>
+    <id>https://zhwangart.github.io/iterm2-快捷键.html</id>
     <published>2018-10-23T08:09:00.000Z</published>
-    <updated>2019-03-14T08:11:43.000Z</updated>
+    <updated>2019-07-11T06:50:09.853Z</updated>
     
     <summary type="html">
     
@@ -284,10 +272,10 @@
   
   <entry>
     <title>在 Mac 环境编辑 Apache 根目录</title>
-    <link href="https://zhwangart.github.io/2018/09/26/Mac-Apache-root/"/>
-    <id>https://zhwangart.github.io/2018/09/26/Mac-Apache-root/</id>
+    <link href="https://zhwangart.github.io/Mac-Apache-root.html"/>
+    <id>https://zhwangart.github.io/Mac-Apache-root.html</id>
     <published>2018-09-26T06:46:00.000Z</published>
-    <updated>2019-03-14T08:11:43.000Z</updated>
+    <updated>2019-07-11T06:47:57.407Z</updated>
     
     <summary type="html">
     
@@ -298,16 +286,16 @@
     
       <category term="Mac OS" scheme="https://zhwangart.github.io/tags/Mac-OS/"/>
     
-      <category term="apache" scheme="https://zhwangart.github.io/tags/apache/"/>
+      <category term="Apache" scheme="https://zhwangart.github.io/tags/Apache/"/>
     
   </entry>
   
   <entry>
-    <title>在 Mac 下配置 php 开发环境：Apache+php+MySql</title>
-    <link href="https://zhwangart.github.io/2018/09/26/%E5%9C%A8Mac%E4%B8%8B%E9%85%8D%E7%BD%AEphp%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%EF%BC%9AApache-php-MySql/"/>
-    <id>https://zhwangart.github.io/2018/09/26/在Mac下配置php开发环境：Apache-php-MySql/</id>
+    <title>在 Mac 下配置 php 开发环境：Apache + php + MySql</title>
+    <link href="https://zhwangart.github.io/Mac-Apache-php-MySql.html"/>
+    <id>https://zhwangart.github.io/Mac-Apache-php-MySql.html</id>
     <published>2018-09-26T06:06:00.000Z</published>
-    <updated>2019-05-05T08:18:49.112Z</updated>
+    <updated>2019-07-11T06:47:16.761Z</updated>
     
     <summary type="html">
     
@@ -316,18 +304,18 @@
     </summary>
     
     
-      <category term="apache" scheme="https://zhwangart.github.io/tags/apache/"/>
-    
       <category term="php" scheme="https://zhwangart.github.io/tags/php/"/>
+    
+      <category term="apache" scheme="https://zhwangart.github.io/tags/apache/"/>
     
   </entry>
   
   <entry>
     <title>img 下多余空隙解决方案</title>
-    <link href="https://zhwangart.github.io/2018/09/12/img-%E4%B8%8B%E5%A4%9A%E4%BD%99%E7%A9%BA%E7%99%BD%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>https://zhwangart.github.io/2018/09/12/img-下多余空白解决方案/</id>
+    <link href="https://zhwangart.github.io/img-%E4%B8%8B%E5%A4%9A%E4%BD%99%E7%A9%BA%E7%99%BD%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html"/>
+    <id>https://zhwangart.github.io/img-下多余空白解决方案.html</id>
     <published>2018-09-12T09:27:00.000Z</published>
-    <updated>2019-03-14T08:11:43.000Z</updated>
+    <updated>2019-07-11T06:52:50.450Z</updated>
     
     <summary type="html">
     
@@ -343,11 +331,31 @@
   </entry>
   
   <entry>
+    <title>哄宝宝顺口溜30条</title>
+    <link href="https://zhwangart.github.io/%E5%93%84%E5%AE%9D%E5%AE%9D%E9%A1%BA%E5%8F%A3%E6%BA%9C30%E9%A6%96.html"/>
+    <id>https://zhwangart.github.io/哄宝宝顺口溜30首.html</id>
+    <published>2013-06-29T07:22:00.000Z</published>
+    <updated>2019-07-11T06:43:34.734Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;哄宝宝顺口溜一共30条，一天一条，一个月不重样！不要每天都是：小白兔，白又白，两只耳朵竖起来，爱吃萝卜和青菜，蹦蹦跳跳真可爱！&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="育儿" scheme="https://zhwangart.github.io/tags/%E8%82%B2%E5%84%BF/"/>
+    
+      <category term="宝宝" scheme="https://zhwangart.github.io/tags/%E5%AE%9D%E5%AE%9D/"/>
+    
+  </entry>
+  
+  <entry>
     <title>明年的今天</title>
-    <link href="https://zhwangart.github.io/2013/03/08/%E6%98%8E%E5%B9%B4%E7%9A%84%E4%BB%8A%E5%A4%A9/"/>
-    <id>https://zhwangart.github.io/2013/03/08/明年的今天/</id>
+    <link href="https://zhwangart.github.io/%E6%98%8E%E5%B9%B4%E7%9A%84%E4%BB%8A%E5%A4%A9.html"/>
+    <id>https://zhwangart.github.io/明年的今天.html</id>
     <published>2013-03-08T06:43:00.000Z</published>
-    <updated>2019-07-10T08:06:37.753Z</updated>
+    <updated>2019-07-11T06:41:12.632Z</updated>
     
     <summary type="html">
     
@@ -364,10 +372,10 @@
   
   <entry>
     <title>再见 2012</title>
-    <link href="https://zhwangart.github.io/2012/12/21/Bye-2012/"/>
-    <id>https://zhwangart.github.io/2012/12/21/Bye-2012/</id>
+    <link href="https://zhwangart.github.io/Bye-2012.html"/>
+    <id>https://zhwangart.github.io/Bye-2012.html</id>
     <published>2012-12-21T04:21:00.000Z</published>
-    <updated>2019-07-10T08:22:41.117Z</updated>
+    <updated>2019-07-11T06:57:49.155Z</updated>
     
     <summary type="html">
     
@@ -378,14 +386,16 @@
     
       <category term="2012" scheme="https://zhwangart.github.io/tags/2012/"/>
     
+      <category term="爱情" scheme="https://zhwangart.github.io/tags/%E7%88%B1%E6%83%85/"/>
+    
   </entry>
   
   <entry>
     <title>老大告诉我：佛也是要敬的！</title>
-    <link href="https://zhwangart.github.io/2012/09/28/%E8%80%81%E5%A4%A7%E5%91%8A%E8%AF%89%E6%88%91%EF%BC%9A%E4%BD%9B%E4%B9%9F%E6%98%AF%E8%A6%81%E6%95%AC%E7%9A%84%EF%BC%81/"/>
-    <id>https://zhwangart.github.io/2012/09/28/老大告诉我：佛也是要敬的！/</id>
+    <link href="https://zhwangart.github.io/%E8%80%81%E5%A4%A7%E5%91%8A%E8%AF%89%E6%88%91%EF%BC%9A%E4%BD%9B%E4%B9%9F%E6%98%AF%E8%A6%81%E6%95%AC%E7%9A%84%EF%BC%81.html"/>
+    <id>https://zhwangart.github.io/老大告诉我：佛也是要敬的！.html</id>
     <published>2012-09-28T06:05:00.000Z</published>
-    <updated>2019-07-10T08:06:50.274Z</updated>
+    <updated>2019-07-11T06:48:21.141Z</updated>
     
     <summary type="html">
     
@@ -400,10 +410,10 @@
   
   <entry>
     <title>爱情到最后，总是一报还一报</title>
-    <link href="https://zhwangart.github.io/2012/06/11/Love-to-the-end/"/>
-    <id>https://zhwangart.github.io/2012/06/11/Love-to-the-end/</id>
+    <link href="https://zhwangart.github.io/Love-to-the-end.html"/>
+    <id>https://zhwangart.github.io/Love-to-the-end.html</id>
     <published>2012-06-11T08:09:00.000Z</published>
-    <updated>2019-06-12T09:35:53.769Z</updated>
+    <updated>2019-07-11T06:32:13.959Z</updated>
     
     <summary type="html">
     
@@ -411,6 +421,8 @@
     
     </summary>
     
+    
+      <category term="2012" scheme="https://zhwangart.github.io/tags/2012/"/>
     
       <category term="爱情" scheme="https://zhwangart.github.io/tags/%E7%88%B1%E6%83%85/"/>
     
