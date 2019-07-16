@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LightWAN 移动端 UI 设计]]></title>
+    <url>%2FAPP-Design-LightWAN.html</url>
+    <content type="text"><![CDATA[LightWAN Orchestrator 移动端的 UI 设计…]]></content>
+      <tags>
+        <tag>Design</tag>
+        <tag>UI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[又一个稻壳阅读器的 LOGO 设计]]></title>
     <url>%2FBird.html</url>
     <content type="text"><![CDATA[继 干脆面做了 LOGO 之后，又一个给赵总 稻壳阅读器 的 LOGO 设计方案！ 实例展示：http://www.april29.cc/bird/]]></content>

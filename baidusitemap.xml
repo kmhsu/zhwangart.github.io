@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zhwangart.github.io/APP-Design-LightWAN.html</loc>
+    <lastmod>2019-07-16</lastmod>
+  </url>  <url>
+    <loc>https://zhwangart.github.io/Bird.html</loc>
+    <lastmod>2019-07-16</lastmod>
+  </url>  <url>
     <loc>https://zhwangart.github.io/%E5%93%84%E5%AE%9D%E5%AE%9D%E9%A1%BA%E5%8F%A3%E6%BA%9C30%E9%A6%96.html</loc>
     <lastmod>2019-07-12</lastmod>
   </url>  <url>
@@ -35,9 +41,6 @@
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://zhwangart.github.io/CSS-filter.html</loc>
-    <lastmod>2019-07-11</lastmod>
-  </url>  <url>
-    <loc>https://zhwangart.github.io/Bird.html</loc>
     <lastmod>2019-07-11</lastmod>
   </url>  <url>
     <loc>https://zhwangart.github.io/iterm2-%E5%BF%AB%E6%8D%B7%E9%94%AE.html</loc>
