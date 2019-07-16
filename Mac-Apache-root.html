@@ -1,1 +1,245 @@
-<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="keywords" content="Mac,Apache,Hexo,Ocean,HTML5,CSS,UI,设计,WEB前端,摄影"><meta name="description" content="数学家的 Hexo 博客，用于展示 zhwangart 设计的一款极简、静谧、纯净、轻盈的主题 Ocean。"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title> 在 Mac 环境编辑 Apache 根目录 | 数学家</title><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css"><script src="/js/pace.min.js"></script></head></html><body><main class="content"><section class="outer"><article id="post-Mac-Apache-root" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal><div class="article-inner"><header class="article-header"><h1 class="article-title" itemprop="name"> 在 Mac 环境编辑 Apache 根目录</h1></header><div class="article-meta"> <a href="/Mac-Apache-root.html" class="article-date"><time datetime="2018-09-26T06:46:00.000Z" itemprop="datePublished">2018-09-26</time></a></div><div class="article-entry" itemprop="articleBody"><p>Apache 的配置文件，在目录 /etc/apache2/ 下，打开 Finder，选择“前往”–“前往文件夹”，输入 /etc/apache2/<br><a id="more"></a></p><h2 id="httpd-conf"><a href="#httpd-conf" class="headerlink" title="httpd.conf"></a>httpd.conf</h2><p>1、在 /etc/apache2/ 中找到 httpd.conf 文件打开，我选择用 Sublime Text，然后找到：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Directory</span> /&gt;</span></span><br><span class="line">    AllowOverride none</span><br><span class="line">    Require all denied</span><br><span class="line"><span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></span><br></pre></td></tr></table></figure><p>修改为：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Directory</span> /&gt;</span></span><br><span class="line">    AllowOverride none</span><br><span class="line">    Require all granted</span><br><span class="line"><span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></span><br></pre></td></tr></table></figure><p>2、开启虚拟主机配置功能，搜索：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#Include /private/etc/apache2/extra/httpd-vhosts.conf</span><br></pre></td></tr></table></figure><p>把前边的注释 # 号去掉，修改为：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Include /private/etc/apache2/extra/httpd-vhosts.conf</span><br></pre></td></tr></table></figure><p>说明：这个目录不用更改<br></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DocumentRoot "/Library/WebServer/Documents"</span><br><span class="line"><span class="tag">&lt;<span class="name">Directory</span> "/<span class="attr">Library</span>/<span class="attr">WebServer</span>/<span class="attr">Documents</span>"&gt;</span></span><br></pre></td></tr></table></figure><p></p><h2 id="httpd-vhosts-conf"><a href="#httpd-vhosts-conf" class="headerlink" title="httpd-vhosts.conf"></a>httpd-vhosts.conf</h2><p>1、在 /etc/apache2/extra/ 中找到 httpd-vhosts.conf 文件打开，依然选择 Sublime Text，然后看到该文件默认开启了两个作为例子的虚拟主机：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">VirtualHost</span> *<span class="attr">:80</span>&gt;</span></span><br><span class="line">    ServerAdmin webmaster@dummy-host.example.com</span><br><span class="line">    DocumentRoot "/usr/docs/dummy-host.example.com"</span><br><span class="line">    ServerName dummy-host.example.com</span><br><span class="line">    ErrorLog "/private/var/log/apache2/dummy-host.example.com-error_log"</span><br><span class="line">    CustomLog "/private/var/log/apache2/dummy-host.example.com-access_log" common</span><br><span class="line"><span class="tag">&lt;/<span class="name">VirtualHost</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="name">VirtualHost</span> *<span class="attr">:80</span>&gt;</span></span><br><span class="line">    ServerAdmin webmaster@dummy-host2.example.com</span><br><span class="line">    DocumentRoot "/usr/docs/dummy-host2.example.com"</span><br><span class="line">    ServerName dummy-host2.example.com</span><br><span class="line">    ErrorLog "/private/var/log/apache2/dummy-host2.example.com-error_log"</span><br><span class="line">    CustomLog "/private/var/log/apache2/dummy-host2.example.com-access_log" common</span><br><span class="line"><span class="tag">&lt;/<span class="name">VirtualHost</span>&gt;</span></span><br></pre></td></tr></table></figure><p>而实际上，这两个虚拟主机是不存在的，在没有配置任何其他虚拟主机时，可能会导致访问localhost时出现如下提示：</p><blockquote><p>Forbidden</p></blockquote><blockquote><p>You don’t have permission to access /index.php on this server</p></blockquote><p>最简单的办法就是在它们每行前面加上 # ，注释掉就好了，这样既能参考又不导致其他问题。</p><p>2、增加如下配置</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">VirtualHost</span> *<span class="attr">:80</span>&gt;</span></span><br><span class="line">    ServerAdmin zhwangart@aliyun.com</span><br><span class="line">    DocumentRoot "/Users/zhwangart/wwwroot"</span><br><span class="line">    ServerName Localhost</span><br><span class="line">    ServerAlias local</span><br><span class="line">    ErrorLog "/private/var/log/apache2/dummy-host.example.com-error_log"</span><br><span class="line">    CustomLog "/private/var/log/apache2/dummy-host.example.com-access_log" common</span><br><span class="line"><span class="tag">&lt;/<span class="name">VirtualHost</span>&gt;</span></span><br></pre></td></tr></table></figure><p>保存退出，并重启 Apache</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl restart</span><br></pre></td></tr></table></figure><p>3、运行“sudo vi /etc/hosts”，打开hosts配置文件，加入”127.0.0.1 mysites”，这样就可以配置完成sites虚拟主机了，可以访问“<a href="http://mysites”了，在10.8之前Mac" target="_blank" rel="noopener">http://mysites”了，在10.8之前Mac</a> OS X版本其内容和“<a href="http://localhost/~[用户名]”完全一致。" target="_blank" rel="noopener">http://localhost/~[用户名]”完全一致。</a></p><p>4、注意，记录log的“ErrorLog “/private/var/log/apache2/sites-error_log””也可以删掉，但记录日志其实是一个好习惯，在出现问题时可以帮助我们判断。如果保留这些log代码，一定log文件路径都是存在的，如果随便修改一个不存在的，会导致Apache无法服务而没有错误提示，这个比较恶心。</p></div><footer class="article-footer"> <a data-url="https://zhwangart.github.io/Mac-Apache-root.html" data-id="cjy5lguig000wufec977pn42u" class="article-share-link">分享</a><ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apache/">Apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac-OS/">Mac OS</a></li></ul></footer></div><nav class="article-nav"> <a href="/iterm2-快捷键.html" class="article-nav-link"><strong class="article-nav-caption">前一篇</strong><div class="article-nav-title"> iterm2 快捷键</div></a> <a href="/Mac-Apache-php-MySql.html" class="article-nav-link"><strong class="article-nav-caption">后一篇</strong><div class="article-nav-title">在 Mac 下配置 php 开发环境：Apache + php + MySql</div></a></nav><div class="gitalk" id="gitalk-container"></div><link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"><script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script><script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script><script type="text/javascript">var gitalk=new Gitalk({clientID:"b056dd67631a756522c0",clientSecret:"05c597da836f12ac1c7a37f1191d729ae14f5886",repo:"gitalk",owner:"zhwangart",admin:["zhwangart"],id:md5(location.pathname),distractionFreeMode:!1,pagerDirection:"last"});gitalk.render("gitalk-container")</script></article></section><footer class="footer"><div class="outer"><div class="float-right"><ul class="list-inline"><li><i class="fe fe-smile-alt"></i><span id="busuanzi_value_site_uv"></span></li></ul></div><ul class="list-inline"><li>&copy; 2019 数学家</li><li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li><li>Theme <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li></ul></div></footer></main><aside class="sidebar"> <button class="navbar-toggle"></button><nav class="navbar"><div class="logo"> <a href="/"><img src="/images/shark.svg" alt="数学家"></a></div><ul class="nav nav-main"><li class="nav-item"> <a class="nav-item-link" href="/">首页</a></li><li class="nav-item"> <a class="nav-item-link" href="/archives">归档</a></li><li class="nav-item"> <a class="nav-item-link" href="/gallery">相册</a></li><li class="nav-item"> <a class="nav-item-link" href="/about">关于</a></li><li class="nav-item"><a class="nav-item-link nav-item-search" title="搜索"><i class="fe fe-search"></i> 搜索</a></li></ul></nav><nav class="navbar navbar-bottom"><ul class="nav"><li class="nav-item"><div class="totop" id="totop"><i class="fe fe-rocket"></i></div></li><li class="nav-item"><a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed"><i class="fe fe-feed"></i></a></li></ul></nav><div class="search-form-wrap"><div class="local-search local-search-plugin"> <input type="search" id="local-search-input" class="local-search-input" placeholder="Search..."><div id="local-search-result" class="local-search-result"></div></div></div></aside><script src="/js/jquery-2.0.3.min.js"></script><script src="/js/lazyload.min.js"></script><script src="/js/busuanzi-2.3.pure.min.js"></script><script src="/fancybox/jquery.fancybox.min.js"></script><script src="/js/search.js"></script><script src="/js/ocean.js"></script></body>
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  
+    <meta name="keywords" content="Mac,Apache,Hexo,Ocean,HTML5,CSS,UI,设计,WEB前端,摄影">
+  
+  
+    <meta name="description" content="数学家的 Hexo 博客，用于展示 zhwangart 设计的一款极简、静谧、纯净、轻盈的主题 Ocean。">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>
+    在 Mac 环境编辑 Apache 根目录 |
+    
+    数学家</title>
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+  
+  <script src="/js/pace.min.js"></script>
+</head>
+</html>
+<body>
+<main class="content">
+  <section class="outer">
+  <article id="post-Mac-Apache-root" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      在 Mac 环境编辑 Apache 根目录
+    </h1>
+  
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/Mac-Apache-root.html" class="article-date">
+  <time datetime="2018-09-26T06:46:00.000Z" itemprop="datePublished">2018-09-26</time>
+</a>
+        
+      </div>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+      
+
+      
+        <p>Apache 的配置文件，在目录 /etc/apache2/ 下，打开 Finder，选择“前往”–“前往文件夹”，输入 /etc/apache2/<br><a id="more"></a></p>
+<h2 id="httpd-conf"><a href="#httpd-conf" class="headerlink" title="httpd.conf"></a>httpd.conf</h2><p>1、在 /etc/apache2/ 中找到 httpd.conf 文件打开，我选择用 Sublime Text，然后找到：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Directory</span> /&gt;</span></span><br><span class="line">    AllowOverride none</span><br><span class="line">    Require all denied</span><br><span class="line"><span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>修改为：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Directory</span> /&gt;</span></span><br><span class="line">    AllowOverride none</span><br><span class="line">    Require all granted</span><br><span class="line"><span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>2、开启虚拟主机配置功能，搜索：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#Include /private/etc/apache2/extra/httpd-vhosts.conf</span><br></pre></td></tr></table></figure>
+<p>把前边的注释 # 号去掉，修改为：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Include /private/etc/apache2/extra/httpd-vhosts.conf</span><br></pre></td></tr></table></figure>
+<p>说明：这个目录不用更改<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DocumentRoot "/Library/WebServer/Documents"</span><br><span class="line"><span class="tag">&lt;<span class="name">Directory</span> "/<span class="attr">Library</span>/<span class="attr">WebServer</span>/<span class="attr">Documents</span>"&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="httpd-vhosts-conf"><a href="#httpd-vhosts-conf" class="headerlink" title="httpd-vhosts.conf"></a>httpd-vhosts.conf</h2><p>1、在 /etc/apache2/extra/ 中找到 httpd-vhosts.conf 文件打开，依然选择 Sublime Text，然后看到该文件默认开启了两个作为例子的虚拟主机：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">VirtualHost</span> *<span class="attr">:80</span>&gt;</span></span><br><span class="line">    ServerAdmin webmaster@dummy-host.example.com</span><br><span class="line">    DocumentRoot "/usr/docs/dummy-host.example.com"</span><br><span class="line">    ServerName dummy-host.example.com</span><br><span class="line">    ErrorLog "/private/var/log/apache2/dummy-host.example.com-error_log"</span><br><span class="line">    CustomLog "/private/var/log/apache2/dummy-host.example.com-access_log" common</span><br><span class="line"><span class="tag">&lt;/<span class="name">VirtualHost</span>&gt;</span></span><br><span class="line"> </span><br><span class="line"><span class="tag">&lt;<span class="name">VirtualHost</span> *<span class="attr">:80</span>&gt;</span></span><br><span class="line">    ServerAdmin webmaster@dummy-host2.example.com</span><br><span class="line">    DocumentRoot "/usr/docs/dummy-host2.example.com"</span><br><span class="line">    ServerName dummy-host2.example.com</span><br><span class="line">    ErrorLog "/private/var/log/apache2/dummy-host2.example.com-error_log"</span><br><span class="line">    CustomLog "/private/var/log/apache2/dummy-host2.example.com-access_log" common</span><br><span class="line"><span class="tag">&lt;/<span class="name">VirtualHost</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>而实际上，这两个虚拟主机是不存在的，在没有配置任何其他虚拟主机时，可能会导致访问localhost时出现如下提示：</p>
+<blockquote>
+<p>Forbidden</p>
+</blockquote>
+<blockquote>
+<p>You don’t have permission to access /index.php on this server</p>
+</blockquote>
+<p>最简单的办法就是在它们每行前面加上 # ，注释掉就好了，这样既能参考又不导致其他问题。</p>
+<p>2、增加如下配置</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">VirtualHost</span> *<span class="attr">:80</span>&gt;</span></span><br><span class="line">    ServerAdmin zhwangart@aliyun.com</span><br><span class="line">    DocumentRoot "/Users/zhwangart/wwwroot"</span><br><span class="line">    ServerName Localhost</span><br><span class="line">    ServerAlias local</span><br><span class="line">    ErrorLog "/private/var/log/apache2/dummy-host.example.com-error_log"</span><br><span class="line">    CustomLog "/private/var/log/apache2/dummy-host.example.com-access_log" common</span><br><span class="line"><span class="tag">&lt;/<span class="name">VirtualHost</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>保存退出，并重启 Apache</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl restart</span><br></pre></td></tr></table></figure>
+<p>3、运行“sudo vi /etc/hosts”，打开hosts配置文件，加入”127.0.0.1 mysites”，这样就可以配置完成sites虚拟主机了，可以访问“<a href="http://mysites”了，在10.8之前Mac" target="_blank" rel="noopener">http://mysites”了，在10.8之前Mac</a> OS X版本其内容和“<a href="http://localhost/~[用户名]”完全一致。" target="_blank" rel="noopener">http://localhost/~[用户名]”完全一致。</a></p>
+<p>4、注意，记录log的“ErrorLog “/private/var/log/apache2/sites-error_log””也可以删掉，但记录日志其实是一个好习惯，在出现问题时可以帮助我们判断。如果保留这些log代码，一定log文件路径都是存在的，如果随便修改一个不存在的，会导致Apache无法服务而没有错误提示，这个比较恶心。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhwangart.github.io/Mac-Apache-root.html" data-id="cjy5lt1da0007wcecmtu06l36" class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apache/">Apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac-OS/">Mac OS</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+    
+  <nav class="article-nav">
+    
+      <a href="/iterm2-快捷键.html" class="article-nav-link">
+        <strong class="article-nav-caption">前一篇</strong>
+        <div class="article-nav-title">
+          
+            iterm2 快捷键
+          
+        </div>
+      </a>
+    
+    
+      <a href="/Mac-Apache-php-MySql.html" class="article-nav-link">
+        <strong class="article-nav-caption">后一篇</strong>
+        <div class="article-nav-title">在 Mac 下配置 php 开发环境：Apache + php + MySql</div>
+      </a>
+    
+  </nav>
+
+
+  
+
+  
+    
+  <div class="gitalk" id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: 'b056dd67631a756522c0',
+      clientSecret: '05c597da836f12ac1c7a37f1191d729ae14f5886',
+      repo: 'gitalk',
+      owner: 'zhwangart',
+      admin: ['zhwangart'],
+      // id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(location.pathname),
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+      pagerDirection: 'last'
+    })
+
+  gitalk.render('gitalk-container')
+  </script>
+
+  
+
+</article>
+
+
+
+</section>
+  <footer class="footer">
+  <div class="outer">
+    <div class="float-right">
+      <ul class="list-inline">
+  
+    <li><i class="fe fe-smile-alt"></i> <span id="busuanzi_value_site_uv"></span></li>
+  
+</ul>
+    </div>
+    <ul class="list-inline">
+      <li>&copy; 2019 数学家</li>
+      <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
+      <li>Theme  <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
+    </ul>
+  </div>
+</footer>
+
+</main>
+<aside class="sidebar">
+  <button class="navbar-toggle"></button>
+
+<nav class="navbar">
+  
+    <div class="logo">
+      <a href="/"><img src="/images/shark.svg" alt="数学家"></a>
+    </div>
+  
+  <ul class="nav nav-main">
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/">首页</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/archives">归档</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/gallery">相册</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-item-link" href="/about">关于</a>
+      </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link nav-item-search" title="搜索">
+        <i class="fe fe-search"></i>
+        搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      <div class="totop" id="totop">
+    <i class="fe fe-rocket"></i>
+</div>
+    </li>
+    <li class="nav-item">
+      
+        <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+          <i class="fe fe-feed"></i>
+        </a>
+      
+    </li>
+  </ul>
+</nav>
+
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+</aside>
+<script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/lazyload.min.js"></script>
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+
+
+  <script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+  <script src="/js/search.js"></script>
+
+
+<script src="/js/ocean.js"></script>
+
+</body>
+</html>
