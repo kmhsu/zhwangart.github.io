@@ -233,7 +233,7 @@
     <link href="https://zhwangart.github.io/2018/11/30/Ocean/"/>
     <id>https://zhwangart.github.io/2018/11/30/Ocean/</id>
     <published>2018-11-30T03:13:00.000Z</published>
-    <updated>2019-07-18T08:38:08.722Z</updated>
+    <updated>2019-07-19T02:03:19.644Z</updated>
     
     <summary type="html">
     
@@ -295,11 +295,11 @@
     <link href="https://zhwangart.github.io/2018/09/26/Mac-Apache-root/"/>
     <id>https://zhwangart.github.io/2018/09/26/Mac-Apache-root/</id>
     <published>2018-09-26T06:46:00.000Z</published>
-    <updated>2019-07-11T06:47:57.407Z</updated>
+    <updated>2019-07-19T02:23:07.061Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Apache 的配置文件，在目录 /etc/apache2/ 下，打开 Finder，选择“前往”–“前往文件夹”，输入 /etc/apache2/&lt;br&gt;
+      &lt;p&gt;Apache 的配置文件，在目录 &lt;code&gt;/etc/apache2/&lt;/code&gt; 下，打开 Finder，选择 &lt;code&gt;前往 – 前往文件夹&lt;/code&gt;，输入 &lt;code&gt;/etc/apache2/&lt;/code&gt;&lt;br&gt;
     
     </summary>
     
@@ -315,7 +315,7 @@
     <link href="https://zhwangart.github.io/2018/09/26/Mac-Apache-php-MySql/"/>
     <id>https://zhwangart.github.io/2018/09/26/Mac-Apache-php-MySql/</id>
     <published>2018-09-26T06:06:00.000Z</published>
-    <updated>2019-07-11T06:47:16.761Z</updated>
+    <updated>2019-07-19T02:26:37.799Z</updated>
     
     <summary type="html">
     
