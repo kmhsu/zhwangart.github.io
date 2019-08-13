@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2019-07-16T09:05:43.317Z</updated>
+  <updated>2019-08-13T01:45:16.972Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>精简迅雷</title>
+    <link href="https://zhwangart.github.io/2019/08/08/Thunder-pluglns/"/>
+    <id>https://zhwangart.github.io/2019/08/08/Thunder-pluglns/</id>
+    <published>2019-08-08T03:50:17.000Z</published>
+    <updated>2019-08-13T01:45:16.972Z</updated>
+    
+    <summary type="html">
+    
+      精简迅雷，删除迅雷影音，删除迅雷精选...让迅雷做纯粹下载工具。
+    
+    </summary>
+    
+    
+      <category term="macOS" scheme="https://zhwangart.github.io/tags/macOS/"/>
+    
+      <category term="精简迅雷" scheme="https://zhwangart.github.io/tags/%E7%B2%BE%E7%AE%80%E8%BF%85%E9%9B%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>LightWAN 移动端 UI 设计</title>
@@ -65,7 +85,7 @@
     <link href="https://zhwangart.github.io/2019/07/02/Ocean-Issues/"/>
     <id>https://zhwangart.github.io/2019/07/02/Ocean-Issues/</id>
     <published>2019-07-02T03:11:11.000Z</published>
-    <updated>2019-07-18T08:00:26.359Z</updated>
+    <updated>2019-08-01T07:25:54.907Z</updated>
     
     <summary type="html">
     
@@ -211,7 +231,7 @@
     <link href="https://zhwangart.github.io/2018/12/06/Gitalk/"/>
     <id>https://zhwangart.github.io/2018/12/06/Gitalk/</id>
     <published>2018-12-06T07:11:49.000Z</published>
-    <updated>2019-07-11T06:51:45.439Z</updated>
+    <updated>2019-08-13T01:43:41.997Z</updated>
     
     <summary type="html">
     
@@ -233,7 +253,7 @@
     <link href="https://zhwangart.github.io/2018/11/30/Ocean/"/>
     <id>https://zhwangart.github.io/2018/11/30/Ocean/</id>
     <published>2018-11-30T03:13:00.000Z</published>
-    <updated>2019-07-19T02:37:50.368Z</updated>
+    <updated>2019-08-01T07:31:09.473Z</updated>
     
     <summary type="html">
     
@@ -407,24 +427,6 @@
       <category term="2012" scheme="https://zhwangart.github.io/tags/2012/"/>
     
       <category term="爱情" scheme="https://zhwangart.github.io/tags/%E7%88%B1%E6%83%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>老大告诉我：佛也是要敬的！</title>
-    <link href="https://zhwangart.github.io/2012/09/28/%E8%80%81%E5%A4%A7%E5%91%8A%E8%AF%89%E6%88%91%EF%BC%9A%E4%BD%9B%E4%B9%9F%E6%98%AF%E8%A6%81%E6%95%AC%E7%9A%84%EF%BC%81/"/>
-    <id>https://zhwangart.github.io/2012/09/28/老大告诉我：佛也是要敬的！/</id>
-    <published>2012-09-28T06:05:00.000Z</published>
-    <updated>2019-07-19T02:52:03.537Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;如是我闻，佛在舍卫国给孤独园为三千诸天讲法，尔时，给孤独尊者即从座起，偏袒右肩，合掌向佛而作是言：“世尊，王志涵何故丢女友、丢钱、丢钱包？”&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="2012" scheme="https://zhwangart.github.io/tags/2012/"/>
     
   </entry>
   
