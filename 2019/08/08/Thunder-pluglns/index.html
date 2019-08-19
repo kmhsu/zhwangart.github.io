@@ -25,8 +25,10 @@
 <body>
 <main class="content">
   <section class="outer">
-  <article id="post-Thunder-pluglns" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
 
+<article id="post-Thunder-pluglns" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
   <div class="article-inner">
     
       <header class="article-header">
@@ -53,6 +55,16 @@
       </div>
     
 
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
     <div class="article-entry" itemprop="articleBody">
       
 
@@ -60,7 +72,6 @@
       
 
       
-        
         <p>MacOS 版迅雷 相比于 Windows 版本来说已经很克制了，但依然有太多功能对用户造成了干扰。打开迅雷，会发现迎面而来的是显眼的迅雷精选。更烦人的是，所有的视频文件打开方式会被清一色替换为迅雷影音 APP ，所以<strong>必须要删了它，们</strong>！<br><a id="more"></a></p>
 <p>打开<code>应用程序 &gt; 迅雷</code> 右键 “显示包内容” 进入 <code>Contents</code></p>
 <h3 id="1、删除迅雷影音"><a href="#1、删除迅雷影音" class="headerlink" title="1、删除迅雷影音"></a>1、删除迅雷影音</h3><p>在 <code>Contents &gt; Bundles</code> 目录下找到罪魁祸首迅雷影音 APP 。将整个目录删除，请走这位不速之客。</p>
@@ -107,7 +118,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhwangart.github.io/2019/08/08/Thunder-pluglns/" data-id="cjz98jf9u000m1gecbzlr9yh4" class="article-share-link">分享</a>
+      <a data-url="https://zhwangart.github.io/2019/08/08/Thunder-pluglns/" data-id="cjzi2jpp0000mmwec513py684" class="article-share-link">分享</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/">macOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/精简迅雷/">精简迅雷</a></li></ul>
 
@@ -177,8 +188,10 @@
 </footer>
 
 </main>
-<aside class="sidebar">
-  <button class="navbar-toggle"></button>
+
+<aside class="sidebar sidebar-specter">
+  
+    <button class="navbar-toggle"></button>
 <nav class="navbar">
   
     <div class="logo">
@@ -233,14 +246,28 @@
   <div id="local-search-result" class="local-search-result"></div>
 </div>
 </div>
-</aside>
-<script src="/js/jquery-2.0.3.min.js"></script>
+  </aside>
+  <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/lazyload.min.js"></script>
 <script src="/js/busuanzi-2.3.pure.min.js"></script>
 
 
 
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
 
 <script src="/js/ocean.js"></script>

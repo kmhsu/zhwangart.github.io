@@ -25,8 +25,10 @@
 <body>
 <main class="content">
   <section class="outer">
-  <article id="post-Ocean" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
 
+<article id="post-Ocean" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
   <div class="article-inner">
     
       <header class="article-header">
@@ -53,6 +55,16 @@
       </div>
     
 
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
     <div class="article-entry" itemprop="articleBody">
       
 
@@ -60,7 +72,6 @@
       
 
       
-        
         <p>Ocean 是基于 Hexo 默认主题 landscape 的功能，设计的一款支持移动设备的主题，并且集成了 Gitalk 评论功能。 由于我是一枚 Designer 而不是 Coder，所以 欢迎指正！<br><a id="more"></a></p>
 <p>如果你喜欢 Ocean 可以 <a href="https://github.com/zhwangart/hexo-theme-ocean" target="_blank" rel="noopener">点这里下载</a>，主题默认使用 Logo 是 Hexo 的 Logo，如果你也喜欢并且想使用我的这个 Shark（小鲨鱼）Logo 的话，那么希望你能给 Ocean 一个 Star，如果你还把页面底部 theme 的作者改为你自己的名字的话，那么更应该给 Ocean 一个 Star 了！</p>
 <p><a href="https://zhwangart.github.io/2018/11/29/Markdown/">这里</a> Clone 了 Markdown 的基本语法在 Ocean 中的展现形式，可能会让你更快速的认知到 Ocean 是否适合你的 Hexo ！</p>
@@ -79,14 +90,29 @@
 <p><strong>Ocean</strong> 使用了 <a href="https://feathericon.com" target="_blank" rel="noopener">feathericon</a> 图标库，菜单中的图标定义在“CSS source / css / _partial / navbar.styl”中，可根据需要进行更改或添加。<br>如果你不需要开启 <strong>相册</strong> 与 <strong>关于</strong> 菜单，需要删除或者注销掉他们的图标，如下边的示例：</p>
 <figure class="highlight styl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">.nav-item</span><br><span class="line">  &amp;:nth-child(<span class="number">1</span>)         <span class="comment">// 主页</span></span><br><span class="line">    .nav-item-link</span><br><span class="line">      &amp;::before</span><br><span class="line">        <span class="attribute">content</span> <span class="string">'\f12f'</span></span><br><span class="line">  &amp;:nth-child(<span class="number">2</span>)         <span class="comment">// 归档</span></span><br><span class="line">    .nav-item-link</span><br><span class="line">      &amp;::before</span><br><span class="line">        <span class="attribute">content</span> <span class="string">'\f12a'</span></span><br><span class="line">  <span class="comment">//&amp;:nth-child(3)         // 相册</span></span><br><span class="line">  <span class="comment">//  .nav-item-link</span></span><br><span class="line">  <span class="comment">//    &amp;::before</span></span><br><span class="line">  <span class="comment">//      content '\f1a9'</span></span><br><span class="line">  <span class="comment">//&amp;:nth-child(4)         // 关于</span></span><br><span class="line">  <span class="comment">//  .nav-item-link</span></span><br><span class="line">  <span class="comment">//    &amp;::before</span></span><br><span class="line">  <span class="comment">//      content '\f174'</span></span><br></pre></td></tr></table></figure>
 <p>如果你想要开启 <strong>Tag（标签）</strong>、<strong>Categories（分类）</strong> 在菜单中显示，请看这里：<a href="https://zhwangart.github.io/2019/07/02/Ocean-Issues/">关于 Ocean 使用中的问题</a></p>
-<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><ul>
-<li><p><strong>本地搜索</strong> -  使用插件 <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a> 生成 <code>xml</code> 索引文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-<p>然后为 hexo 的配置文件 <code>_config.yml</code> 添加插件配置（注意：不是主题的配置文件，主题配置文件 Ocean 已经配置完成）：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo-generator-searchdb@1.0.8</span></span><br><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  content: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><h4 id="1、hexo-generator-search-本地检索"><a href="#1、hexo-generator-search-本地检索" class="headerlink" title="1、hexo-generator-search 本地检索"></a>1、<a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a> 本地检索</h4><ul>
+<li><p>安装</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>RSS</strong> -  如果您想启用RSS，还需要 <a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generate-feed</a> 插件，仅安装即可，Ocean 已经配置完成。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+<li><p>配置<br>  Hexo 的配置文件 <code>_config.yml</code> 添加插件配置（注意：不是主题的配置文件）：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="2、hexo-generate-feed-RSS"><a href="#2、hexo-generate-feed-RSS" class="headerlink" title="2、hexo-generate-feed RSS"></a>2、<a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generate-feed</a> RSS</h4><ul>
+<li><p>安装</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置<br>  Hexo 的配置文件 <code>_config.yml</code> 添加插件配置（注意：不是主题的配置文件）：</p>
+  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line"><span class="attr">     type:</span> <span class="string">atom</span></span><br><span class="line"><span class="attr">     path:</span> <span class="string">atom.xml</span></span><br><span class="line"><span class="attr">     limit:</span> <span class="number">20</span></span><br><span class="line"><span class="attr">     hub:</span></span><br><span class="line"><span class="attr">     content:</span></span><br><span class="line"><span class="attr">     content_limit:</span> <span class="number">140</span></span><br><span class="line"><span class="attr">     content_limit_delim:</span> <span class="string">' '</span></span><br><span class="line"><span class="attr">     order_by:</span> <span class="bullet">-date</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="3、hexo-generator-index-pin-top-文章置顶"><a href="#3、hexo-generator-index-pin-top-文章置顶" class="headerlink" title="3、hexo-generator-index-pin-top 文章置顶"></a>3、<a href="https://github.com/netcan/hexo-generator-index-pin-top" target="_blank" rel="noopener">hexo-generator-index-pin-top</a> 文章置顶</h4><ul>
+<li><p>安装</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm uninstall hexo-generator-index --save</span><br><span class="line"> $ npm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启</p>
+<p>  在需要置顶的文章的 Front-matter 区域加上 <code>top: ture</code> ，示例：</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"> title: 新增文章置顶</span><br><span class="line"> author: zhwangart</span><br><span class="line"> date: 2019-07-18 15:45:03</span><br><span class="line"> top: ture</span><br><span class="line"> ---</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="文章封面图"><a href="#文章封面图" class="headerlink" title="文章封面图"></a>文章封面图</h3><p>需要写在 markdown 的 Front-matter 区域：</p>
@@ -96,10 +122,13 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page gallery</span><br></pre></td></tr></table></figure>
 <p>然后在编辑 markdown 的时候需要写在 Front-matter 部分，这种写法可能不是特别特别的好，希望能有更好的方法。</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Gallery</span><br><span class="line">albums: [</span><br><span class="line"><span class="code">        ["img_url","img_caption"],</span></span><br><span class="line"><span class="code">        ["img_url","img_caption"]</span></span><br><span class="line"><span class="code">        ]</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<h3 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h3><p>安装插件 <a href="https://github.com/netcan/hexo-generator-index-pin-top" target="_blank" rel="noopener">hexo-generator-index-pin-top</a>：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">npm</span> <span class="string">uninstall</span> <span class="string">hexo-generator-index</span> <span class="bullet">--save</span></span><br><span class="line"><span class="string">$</span> <span class="string">npm</span> <span class="string">install</span> <span class="string">hexo-generator-index-pin-top</span> <span class="bullet">--save</span></span><br></pre></td></tr></table></figure>
-<p>在需要置顶的文章的 Front-matter 区域加上 <code>top: ture</code> ，示例：</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 新增文章置顶</span><br><span class="line">author: zhwangart</span><br><span class="line">date: 2019-07-18 15:45:03</span><br><span class="line">top: ture</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="Toc-文章目录"><a href="#Toc-文章目录" class="headerlink" title="Toc 文章目录"></a>Toc 文章目录</h3><p>使用 <a href="http://tscanlin.github.io/tocbot/" target="_blank" rel="noopener">Tocbot</a> 解析内容中的标题标签 (h1~h6) 并插入目录。使用方法：</p>
+<blockquote>
+<p>Ocean 配置 Toc 只作用于 Post 页面，在其他 Page 中不作用。</p>
+</blockquote>
+<h4 id="1-在主题配置文件-ocean-config-yml-中开启"><a href="#1-在主题配置文件-ocean-config-yml-中开启" class="headerlink" title="1. 在主题配置文件 ocean/_config.yml 中开启"></a>1. 在主题配置文件 <code>ocean/_config.yml</code> 中开启</h4><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Toc</span></span><br><span class="line"><span class="attr">toc:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-在-Post-中关闭-Toc"><a href="#2-在-Post-中关闭-Toc" class="headerlink" title="2. 在 Post 中关闭 Toc"></a>2. 在 Post 中关闭 Toc</h4><p>如果在 <code>ocean/_config.yml</code> 开启了 Toc ，那么 Tocbot 会在每一篇 Blog 都解析内容中的标题标签生成 Toc 文章目录，但并不是所有的 Blog 中都需要 Toc，所以在 markdown 的 Front-matter 部分可以关闭：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">toc: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <h3 id="部署到-Github"><a href="#部署到-Github" class="headerlink" title="部署到 Github"></a>部署到 Github</h3><p>安装 <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>。</p>
 <p>修改配置：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span> <span class="comment">#https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span> <span class="comment">#published</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
@@ -111,7 +140,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhwangart.github.io/2018/11/30/Ocean/" data-id="cjz98jf9s000j1gec25jvy8bz" class="article-share-link">分享</a>
+      <a data-url="https://zhwangart.github.io/2018/11/30/Ocean/" data-id="cjzi2jpox000imwecvmtkaly9" class="article-share-link">分享</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ocean/">Ocean</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Theme/">Theme</a></li></ul>
 
@@ -190,8 +219,10 @@
 </footer>
 
 </main>
-<aside class="sidebar">
-  <button class="navbar-toggle"></button>
+
+<aside class="sidebar sidebar-specter">
+  
+    <button class="navbar-toggle"></button>
 <nav class="navbar">
   
     <div class="logo">
@@ -246,14 +277,28 @@
   <div id="local-search-result" class="local-search-result"></div>
 </div>
 </div>
-</aside>
-<script src="/js/jquery-2.0.3.min.js"></script>
+  </aside>
+  <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/lazyload.min.js"></script>
 <script src="/js/busuanzi-2.3.pure.min.js"></script>
 
 
 
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
 
 <script src="/js/ocean.js"></script>

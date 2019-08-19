@@ -25,8 +25,10 @@
 <body>
 <main class="content">
   <section class="outer">
-  <article id="post-Mac-Apache-root" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
 
+<article id="post-Mac-Apache-root" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
   <div class="article-inner">
     
       <header class="article-header">
@@ -53,6 +55,16 @@
       </div>
     
 
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
     <div class="article-entry" itemprop="articleBody">
       
 
@@ -60,7 +72,6 @@
       
 
       
-        
         <p>Apache 的配置文件，在目录 <code>/etc/apache2/</code> 下，打开 Finder，选择 <code>前往 – 前往文件夹</code>，输入 <code>/etc/apache2/</code><br><a id="more"></a></p>
 <h2 id="httpd-conf"><a href="#httpd-conf" class="headerlink" title="httpd.conf"></a>httpd.conf</h2><p>1、在 <code>/etc/apache2/</code> 中找到 <strong>httpd.conf</strong> 文件打开，我选择用 Sublime Text，然后找到：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Directory</span> /&gt;</span></span><br><span class="line">    AllowOverride none</span><br><span class="line">    Require all denied</span><br><span class="line"><span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -91,7 +102,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhwangart.github.io/2018/09/26/Mac-Apache-root/" data-id="cjz98jf9o000c1gecq8x0fzyv" class="article-share-link">分享</a>
+      <a data-url="https://zhwangart.github.io/2018/09/26/Mac-Apache-root/" data-id="cjzi2jpoq0008mwecoapx4xtp" class="article-share-link">分享</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Apache/">Apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mac-OS/">Mac OS</a></li></ul>
 
@@ -170,8 +181,10 @@
 </footer>
 
 </main>
-<aside class="sidebar">
-  <button class="navbar-toggle"></button>
+
+<aside class="sidebar sidebar-specter">
+  
+    <button class="navbar-toggle"></button>
 <nav class="navbar">
   
     <div class="logo">
@@ -226,14 +239,28 @@
   <div id="local-search-result" class="local-search-result"></div>
 </div>
 </div>
-</aside>
-<script src="/js/jquery-2.0.3.min.js"></script>
+  </aside>
+  <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/lazyload.min.js"></script>
 <script src="/js/busuanzi-2.3.pure.min.js"></script>
 
 
 
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
 
 <script src="/js/ocean.js"></script>

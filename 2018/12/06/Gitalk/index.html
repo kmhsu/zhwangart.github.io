@@ -25,8 +25,10 @@
 <body>
 <main class="content">
   <section class="outer">
-  <article id="post-Gitalk" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
 
+<article id="post-Gitalk" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
   <div class="article-inner">
     
       <header class="article-header">
@@ -53,6 +55,16 @@
       </div>
     
 
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
     <div class="article-entry" itemprop="articleBody">
       
 
@@ -60,7 +72,6 @@
       
 
       
-        
         <p>由于我比较笨还英文不好，所以按照 <a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">Gitalk</a> 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。<br>这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！<br><a id="more"></a></p>
 <h2 id="添加过程"><a href="#添加过程" class="headerlink" title="添加过程"></a>添加过程</h2><h3 id="申请-GitHub-Application"><a href="#申请-GitHub-Application" class="headerlink" title="申请 GitHub Application"></a>申请 GitHub Application</h3><p>如果有的话在 Github 中 <code>settings / Developer settings</code> 选择一个 OAuth App，如果没有 <a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">点击这里申请</a>，我是第一次使用，自然需要从申请开始。</p>
 <p><img src="https://github.com/zhwangart/gitalk/raw/master/source/Register-OAuth-application.png" alt="注册需要填写的表单"></p>
@@ -121,7 +132,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhwangart.github.io/2018/12/06/Gitalk/" data-id="cjz98jf9h00071gec0w9xd621" class="article-share-link">分享</a>
+      <a data-url="https://zhwangart.github.io/2018/12/06/Gitalk/" data-id="cjzi2jpoj0002mwecu1kkf8hm" class="article-share-link">分享</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gitalk/">Gitalk</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
@@ -200,8 +211,10 @@
 </footer>
 
 </main>
-<aside class="sidebar">
-  <button class="navbar-toggle"></button>
+
+<aside class="sidebar sidebar-specter">
+  
+    <button class="navbar-toggle"></button>
 <nav class="navbar">
   
     <div class="logo">
@@ -256,14 +269,28 @@
   <div id="local-search-result" class="local-search-result"></div>
 </div>
 </div>
-</aside>
-<script src="/js/jquery-2.0.3.min.js"></script>
+  </aside>
+  <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/lazyload.min.js"></script>
 <script src="/js/busuanzi-2.3.pure.min.js"></script>
 
 
 
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
 
 <script src="/js/ocean.js"></script>

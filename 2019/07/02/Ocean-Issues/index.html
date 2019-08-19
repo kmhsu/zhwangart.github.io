@@ -25,8 +25,10 @@
 <body>
 <main class="content">
   <section class="outer">
-  <article id="post-Ocean-Issues" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
 
+<article id="post-Ocean-Issues" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
   <div class="article-inner">
     
       <header class="article-header">
@@ -53,6 +55,16 @@
       </div>
     
 
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
+
+    
+
     <div class="article-entry" itemprop="articleBody">
       
 
@@ -60,9 +72,8 @@
       
 
       
-        
         <p>本文将 <a href="https://zhwangart.github.io/2018/11/30/Ocean/">Ocean 中文文档</a> 下边评论区中，一些 Hexo 博主们在使用 Ocean 时遇到的比较明显的问题整理归纳，当然有些问题并不是出在 Ocean 主题上，而是因为没有认真阅读 Hexo 的文档，我也简单写一下。<br><a id="more"></a></p>
-<h2 id="1、认真阅读-Hexo-的文档"><a href="#1、认真阅读-Hexo-的文档" class="headerlink" title="1、认真阅读 Hexo 的文档"></a>1、认真阅读 Hexo 的文档</h2><h3 id="1-1-怎么让首页内容默认显示摘，点击标题或者阅读全文进入文章页？"><a href="#1-1-怎么让首页内容默认显示摘，点击标题或者阅读全文进入文章页？" class="headerlink" title="1.1 怎么让首页内容默认显示摘，点击标题或者阅读全文进入文章页？"></a>1.1 怎么让首页内容默认显示摘，点击标题或者阅读全文进入文章页？</h3><p>在写 Markdown 的时候自定义摘要文字：</p>
+<h2 id="1、认真阅读-Hexo-的文档"><a href="#1、认真阅读-Hexo-的文档" class="headerlink" title="1、认真阅读 Hexo 的文档"></a>1、认真阅读 Hexo 的文档</h2><h3 id="1-1-如何首页默认显示摘要？"><a href="#1-1-如何首页默认显示摘要？" class="headerlink" title="1.1 如何首页默认显示摘要？"></a>1.1 如何首页默认显示摘要？</h3><p>在写 Markdown 的时候自定义摘要文字：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">摘要...</span><br><span class="line"><span class="xml"><span class="comment">&lt;!--more--&gt;</span></span></span><br><span class="line">正文...</span><br></pre></td></tr></table></figure>
 <h3 id="1-2-怎么添加-相册、关于、标签…-页面？"><a href="#1-2-怎么添加-相册、关于、标签…-页面？" class="headerlink" title="1.2 怎么添加 相册、关于、标签… 页面？"></a>1.2 怎么添加 相册、关于、标签… 页面？</h3><p>首先更新 Ocean 代码，然后认真阅读 <a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">Hexo 文档</a>，有说明：</p>
 <blockquote>
@@ -75,13 +86,13 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">gallery</span>      <span class="string">//</span> <span class="string">创建相册页面</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">about</span>        <span class="string">//</span> <span class="string">创建关于页面</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">tags</span>         <span class="string">//</span> <span class="string">创建标签页面</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">categories</span>   <span class="string">//</span> <span class="string">创建分类页面</span></span><br></pre></td></tr></table></figure>
 <p>因为主题会给不同的页面定义不同的模板（可以在 <code>theme/layout</code> 中可看到模板文件），所以需要在 Front-matter 区域标注 layout （布局），以 Tags 页面为例：</p>
 <p>1、首先目录一定是：<code>source/tags/index.md</code><br>2、Markdown ：</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Tags</span><br><span class="line">date: 2019-04-19 17:28:54</span><br><span class="line">type: tags</span><br><span class="line">layout: "tags"</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Tags</span><br><span class="line">date: 2019-04-19 17:28:54</span><br><span class="line">type: tags</span><br><span class="line">layout: "tags"</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>最初写 Ocean 的时候纯粹是一个 Designer 的自娱自乐，自己不需要 Tag 与 Categories 所以就没有加对应模板，后来看见大家都在问，就添加上了！现在只是单纯的加了模板页，我还会再设计一下它们的 UI ，喜欢 Ocean 的博主空闲时间可以关注一下更新～</p>
 <h3 id="1-3、语言是如何配置的？"><a href="#1-3、语言是如何配置的？" class="headerlink" title="1.3、语言是如何配置的？"></a>1.3、语言是如何配置的？</h3><p>主题配置文件 <code>_config.yml</code> 中：<code>language: zh-CN</code> ，详细请看 <a href="https://hexo.io/zh-cn/docs/internationalization" target="_blank" rel="noopener">Hexo 国际化（i18n）</a> ，language 什么值都不写默认为英文，其实还是 <strong>你写作的是什么文字就是什么语言</strong> ，比如你写一篇中文 blog 它绝不可能给你转换成英文的，国际化也就是基本功能的语言定义，比如打开一个语言文件（<code>language/zh-CN.yml</code>）可以看到：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">categories:</span> <span class="string">分类</span></span><br><span class="line"><span class="attr">search:</span> <span class="string">搜索</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">标签</span></span><br><span class="line"><span class="attr">tagcloud:</span> <span class="string">标签云</span></span><br><span class="line"><span class="attr">tweets:</span> <span class="string">推文</span></span><br><span class="line"><span class="attr">prev:</span> <span class="string">上一页</span></span><br><span class="line"><span class="attr">next:</span> <span class="string">下一页</span></span><br><span class="line"><span class="attr">comment:</span> <span class="string">留言</span></span><br><span class="line"><span class="attr">archive_a:</span> <span class="string">归档</span></span><br><span class="line"><span class="attr">archive_b:</span> <span class="string">归档：%s</span></span><br><span class="line"><span class="attr">page:</span> <span class="string">第</span> <span class="string">%d</span> <span class="string">页</span></span><br><span class="line"><span class="attr">recent_posts:</span> <span class="string">最新文章</span></span><br><span class="line"><span class="attr">newer:</span> <span class="string">Newer</span></span><br><span class="line"><span class="attr">older:</span> <span class="string">Older</span></span><br><span class="line"><span class="attr">share:</span> <span class="string">分享</span></span><br><span class="line"><span class="attr">powered_by:</span> <span class="string">Powered</span> <span class="string">by</span></span><br><span class="line"><span class="attr">rss_feed:</span> <span class="string">RSS</span> <span class="string">Feed</span></span><br><span class="line"><span class="attr">category:</span> <span class="string">Category</span></span><br><span class="line"><span class="attr">tag:</span> <span class="string">Tag</span></span><br></pre></td></tr></table></figure>
-<h2 id="2、使用-Ocean-的问题"><a href="#2、使用-Ocean-的问题" class="headerlink" title="2、使用 Ocean 的问题"></a>2、使用 Ocean 的问题</h2><h3 id="2-1-相册、关于、标签-菜单中对应的图标"><a href="#2-1-相册、关于、标签-菜单中对应的图标" class="headerlink" title="2.1 相册、关于、标签 菜单中对应的图标"></a>2.1 相册、关于、标签 菜单中对应的图标</h3><p>图标都 <strong>按顺序写</strong> 在了 css 中，目录：<code>source/css/_partial/navbar.styl</code> ，因为我不需要分类与标签页面直观的展示出来，所以我注掉了对应的代码，然后把 关于 :nth-child(6) 改为 :nth-child(4) 。</p>
+<h2 id="2、使用-Ocean-的问题"><a href="#2、使用-Ocean-的问题" class="headerlink" title="2、使用 Ocean 的问题"></a>2、使用 Ocean 的问题</h2><h3 id="2-1-相册、分类、标签…菜单对应图标"><a href="#2-1-相册、分类、标签…菜单对应图标" class="headerlink" title="2.1 相册、分类、标签…菜单对应图标"></a>2.1 相册、分类、标签…菜单对应图标</h3><p>图标都 <strong>按顺序写</strong> 在了 css 中，目录：<code>source/css/_partial/navbar.styl</code> ，因为我不需要分类与标签页面直观的展示出来，所以我注掉了对应的代码，然后把 关于 :nth-child(6) 改为 :nth-child(4) 。</p>
 <figure class="highlight styl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">.nav-item</span><br><span class="line">    &amp;:nth-child(<span class="number">1</span>)         <span class="comment">// 主页</span></span><br><span class="line">      .nav-item-link</span><br><span class="line">        &amp;::before</span><br><span class="line">          <span class="attribute">content</span> <span class="string">'\f12f'</span></span><br><span class="line">    &amp;:nth-child(<span class="number">2</span>)         <span class="comment">// 归档</span></span><br><span class="line">      .nav-item-link</span><br><span class="line">        &amp;::before</span><br><span class="line">          <span class="attribute">content</span> <span class="string">'\f12a'</span></span><br><span class="line">    &amp;:nth-child(<span class="number">3</span>)         <span class="comment">// 相册</span></span><br><span class="line">      .nav-item-link</span><br><span class="line">        &amp;::before</span><br><span class="line">          <span class="attribute">content</span> <span class="string">'\f1a9'</span></span><br><span class="line">    <span class="comment">//&amp;:nth-child(4)         // 分类</span></span><br><span class="line">    <span class="comment">//  .nav-item-link</span></span><br><span class="line">    <span class="comment">//    &amp;::before</span></span><br><span class="line">    <span class="comment">//      content '\f18c'</span></span><br><span class="line">    <span class="comment">//&amp;:nth-child(5)         // 标签</span></span><br><span class="line">    <span class="comment">//  .nav-item-link</span></span><br><span class="line">    <span class="comment">//    &amp;::before</span></span><br><span class="line">    <span class="comment">//      content '\f153'</span></span><br><span class="line">    &amp;:nth-child(<span class="number">4</span>)         <span class="comment">// 关于</span></span><br><span class="line">      .nav-item-link</span><br><span class="line">        &amp;::before</span><br><span class="line">          <span class="attribute">content</span> <span class="string">'\f174'</span></span><br></pre></td></tr></table></figure>
-<h3 id="2-2-我已经新建了一个相册页面，怎么给相册加相片？"><a href="#2-2-我已经新建了一个相册页面，怎么给相册加相片？" class="headerlink" title="2.2 我已经新建了一个相册页面，怎么给相册加相片？"></a>2.2 我已经新建了一个相册页面，怎么给相册加相片？</h3><p>写在 markdown 的 Front-matter 区域：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Gallery</span><br><span class="line">albums: [</span><br><span class="line"><span class="code">        ["img_url","img_caption"],</span></span><br><span class="line"><span class="code">        ["img_url","img_caption"]</span></span><br><span class="line"><span class="code">        ]</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-2-怎么发布照片？"><a href="#2-2-怎么发布照片？" class="headerlink" title="2.2 怎么发布照片？"></a>2.2 怎么发布照片？</h3><p>已经新建了一个相册页面，怎么发布照片？写在 markdown 的 Front-matter 区域：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Gallery</span><br><span class="line">albums: [</span><br><span class="line"><span class="code">        ["img_url","img_caption"],</span></span><br><span class="line"><span class="code">        ["img_url","img_caption"]</span></span><br><span class="line"><span class="code">        ]</span></span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 <p>还是有疑问，可以看 <a href="https://github.com/zhwangart/gitalk/issues/7#issuecomment-471168170" target="_blank" rel="noopener">galikeoy 回复 Mrxxd 关于相册与个人简介的问题</a> 。</p>
 <h3 id="2-3-分享很鸡肋？"><a href="#2-3-分享很鸡肋？" class="headerlink" title="2.3 分享很鸡肋？"></a>2.3 分享很鸡肋？</h3><p>分享功能确实鸡肋，分享到微信实现起来简直太难，所以我也没有过多研究。</p>
 <h3 id="2-4-本地搜索功能不起作用？"><a href="#2-4-本地搜索功能不起作用？" class="headerlink" title="2.4 本地搜索功能不起作用？"></a>2.4 本地搜索功能不起作用？</h3><p>本地检索需要安装插件 <a href="https://github.com/theme-next/hexo-generator-searchdb" target="_blank" rel="noopener">hexo-generator-searchdb</a> </p>
@@ -92,7 +103,7 @@
 <p>修改为<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;url&gt;<span class="xml"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">encodeURI</span>(<span class="attr">post.path</span>) %&gt;</span><span class="tag">&lt;/<span class="name">url</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
 <p>使其中 url 中常见的字符（如：&amp;, ?, /, =）不被十六进制的转义序列进行替换。</p>
 <h3 id="2-5、我的评论出现了问题？"><a href="#2-5、我的评论出现了问题？" class="headerlink" title="2.5、我的评论出现了问题？"></a>2.5、我的评论出现了问题？</h3><p>请移步 <a href="https://zhwangart.github.io/2018/12/06/Gitalk/">Gitalk 的使用</a> ，基本就是文章描述到到三个问题，然后我就都遇上了，所以写出来作为前车之鉴。</p>
-<h3 id="2-6、文章封面图片在首页无法显示，只在详情页显示？"><a href="#2-6、文章封面图片在首页无法显示，只在详情页显示？" class="headerlink" title="2.6、文章封面图片在首页无法显示，只在详情页显示？"></a>2.6、文章封面图片在首页无法显示，只在详情页显示？</h3><p>大部分应该是图片存放路径的问题，建议不要把文章图片放在 theme 中的 source/images 中，<a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">Hexo 资源文件夹</a> 说的是项目图片，而不是 post 图片。我之前是放在 <a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云</a> 上，访问速度快，但是有费用产生，后来我就放 github 上了，文章配图直接写一个 github 的路径地址。</p>
+<h3 id="2-6、文章封面图片无法显示？"><a href="#2-6、文章封面图片无法显示？" class="headerlink" title="2.6、文章封面图片无法显示？"></a>2.6、文章封面图片无法显示？</h3><p>文章封面图片在首页无法显示，只在详情页显示？大部分应该是图片存放路径的问题，建议不要把文章图片放在 theme 中的 source/images 中，<a href="https://hexo.io/zh-cn/docs/asset-folders" target="_blank" rel="noopener">Hexo 资源文件夹</a> 说的是项目图片，而不是 post 图片。我之前是放在 <a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云</a> 上，访问速度快，但是有费用产生，后来我就放 github 上了，文章配图直接写一个 github 的路径地址。</p>
 <h3 id="2-7-首页的视频是否可以换成图片？"><a href="#2-7-首页的视频是否可以换成图片？" class="headerlink" title="2.7 首页的视频是否可以换成图片？"></a>2.7 首页的视频是否可以换成图片？</h3><p>完全可以，首先你需要更新一下 Ocean 因为我加入了对图片支持的 css 样式，其次因为 Ocean 默认是视频，所以换成图片需要简化模板文件的代码，模板路径：<code>ocean/layout/_partial/ocean.ejs</code> ，简化的代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"video-media"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"&lt;%- theme.ocean.path %&gt;"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"video-overlay"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>这里的 <code>&lt;%- theme.ocean.path %&gt;</code> 你可以直接写一个图片都完整路径！或者保持现在这样，然后在 <code>_config.yml</code> 中配置！</p>
@@ -103,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zhwangart.github.io/2019/07/02/Ocean-Issues/" data-id="cjz98jf9r000g1gecy4erkwna" class="article-share-link">分享</a>
+      <a data-url="https://zhwangart.github.io/2019/07/02/Ocean-Issues/" data-id="cjzi2jpow000fmwec5tduyjrq" class="article-share-link">分享</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ocean/">Ocean</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Theme/">Theme</a></li></ul>
 
@@ -182,8 +193,10 @@
 </footer>
 
 </main>
-<aside class="sidebar">
-  <button class="navbar-toggle"></button>
+
+<aside class="sidebar sidebar-specter">
+  
+    <button class="navbar-toggle"></button>
 <nav class="navbar">
   
     <div class="logo">
@@ -238,14 +251,28 @@
   <div id="local-search-result" class="local-search-result"></div>
 </div>
 </div>
-</aside>
-<script src="/js/jquery-2.0.3.min.js"></script>
+  </aside>
+  <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/lazyload.min.js"></script>
 <script src="/js/busuanzi-2.3.pure.min.js"></script>
 
 
 
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
 
 <script src="/js/ocean.js"></script>
