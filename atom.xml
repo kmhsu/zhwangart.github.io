@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2019-09-03T06:33:14.761Z</updated>
+  <updated>2019-09-24T10:03:51.583Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kodak 400 过期胶片</title>
+    <link href="https://zhwangart.github.io/2019/09/24/Film-FA-190616/"/>
+    <id>https://zhwangart.github.io/2019/09/24/Film-FA-190616/</id>
+    <published>2019-09-24T09:46:20.000Z</published>
+    <updated>2019-09-24T10:03:51.583Z</updated>
+    
+    <summary type="html">
+    
+      给 Nikon FA 做了保养之后，用廉价购买的 Kodak 400 过期交卷试机试卷~
+    
+    </summary>
+    
+    
+      <category term="胶片" scheme="https://zhwangart.github.io/tags/%E8%83%B6%E7%89%87/"/>
+    
+      <category term="摄影" scheme="https://zhwangart.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>精简迅雷</title>
@@ -116,9 +136,9 @@
     </summary>
     
     
-      <category term="Canonet QL17 G-III" scheme="https://zhwangart.github.io/tags/Canonet-QL17-G-III/"/>
-    
       <category term="胶片" scheme="https://zhwangart.github.io/tags/%E8%83%B6%E7%89%87/"/>
+    
+      <category term="Canonet QL17 G-III" scheme="https://zhwangart.github.io/tags/Canonet-QL17-G-III/"/>
     
       <category term="旁轴" scheme="https://zhwangart.github.io/tags/%E6%97%81%E8%BD%B4/"/>
     
@@ -400,26 +420,6 @@
     <summary type="html">
     
       比如嫌你家在河北太远的那个热爱北京的姑娘，最后找了个老外玩去了；嫌你长的丑的那个冰清玉洁的姑娘，最后跟个一般人睡下了……
-    
-    </summary>
-    
-    
-      <category term="2012" scheme="https://zhwangart.github.io/tags/2012/"/>
-    
-      <category term="爱情" scheme="https://zhwangart.github.io/tags/%E7%88%B1%E6%83%85/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>再见 2012</title>
-    <link href="https://zhwangart.github.io/2012/12/21/Bye-2012/"/>
-    <id>https://zhwangart.github.io/2012/12/21/Bye-2012/</id>
-    <published>2012-12-21T04:21:00.000Z</published>
-    <updated>2019-07-17T06:06:14.483Z</updated>
-    
-    <summary type="html">
-    
-      沿着这城市一起走过的每一个地方，慢慢走着，似乎在探寻三年以前关于半边身子赌注的故事，闻闻什刹海水的味道，看看古老的建筑物，还是否能找到你我爱情留下的痕迹，追溯过去留在这座城市中的脚印，品味下独特的古都情怀。终我一生，我想我再也找不到那年月里埋在心里的最初的美好。
     
     </summary>
     
