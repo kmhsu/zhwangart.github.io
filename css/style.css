@@ -1054,12 +1054,6 @@ img {
 .sidebar.on {
   right: 0;
 }
-.sidebar-specter {
-  opacity: 0.1;
-}
-.sidebar-specter:hover {
-  opacity: 1;
-}
 .navbar-toggle {
   position: absolute;
   top: 1.5rem;
@@ -2159,6 +2153,9 @@ pre .javascript .function {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+.vcomments {
+  margin-top: 3rem;
 }
 .macbook {
   position: relative;

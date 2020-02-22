@@ -24,14 +24,12 @@
 <body>
 <main class="content">
   <section class="outer">
-  
+  <article id="post-Gitalk" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
 
-<article id="post-Gitalk" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
-  
-  <div class="article-inner">
-    
-      <header class="article-header">
+    <div class="article-inner">
         
+            <header class="article-header">
+                
   
     <h1 class="article-title" itemprop="name">
       Gitalk 的使用
@@ -42,36 +40,36 @@
 
 
 
-      </header>
-    
+            </header>
+            
 
-    
-      <div class="article-meta">
-        <a href="/2018/12/06/Gitalk/" class="article-date">
+                
+                    <div class="article-meta">
+                        <a href="/2018/12/06/Gitalk/" class="article-date">
   <time datetime="2018-12-06T07:11:49.000Z" itemprop="datePublished">2018-12-06</time>
 </a>
-        
-      </div>
-    
+                            
+                    </div>
+                    
 
-    
-      
+                        
+                            
     <div class="tocbot"></div>
 
 
 
 
 
-    
+                                
 
-    <div class="article-entry" itemprop="articleBody">
-      
+                                    <div class="article-entry" itemprop="articleBody">
+                                        
 
 
-      
+                                            
 
-      
-        <p>由于我比较笨还英文不好，所以按照 <a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">Gitalk</a> 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。<br>这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！<br><a id="more"></a></p>
+                                                
+                                                                    <p>由于我比较笨还英文不好，所以按照 <a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener">Gitalk</a> 提供的文档给 Hexo 添加评论功能，简直就是不能行！各种报错后，翻看 Issues、Google、百度… 用了一天时间终于 Gitalk 可用了。<br>这里我分享一下我的添加过程与报错问题的解决方法，供参考借鉴！<br><a id="more"></a></p>
 <h2 id="添加过程"><a href="#添加过程" class="headerlink" title="添加过程"></a>添加过程</h2><h3 id="申请-GitHub-Application"><a href="#申请-GitHub-Application" class="headerlink" title="申请 GitHub Application"></a>申请 GitHub Application</h3><p>如果有的话在 Github 中 <code>settings / Developer settings</code> 选择一个 OAuth App，如果没有 <a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">点击这里申请</a>，我是第一次使用，自然需要从申请开始。</p>
 <p><img src="https://github.com/zhwangart/gitalk/raw/master/source/Register-OAuth-application.png" alt="注册需要填写的表单"></p>
 <p>说明一下：</p>
@@ -128,20 +126,21 @@
 </ol>
 <p>欢迎更多补充…</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://zhwangart.github.io/2018/12/06/Gitalk/" data-id="ck3ixs8960007808i8fs8s4xb"
-         class="article-share-link">分享</a>
-      
+                                                                        
+                                    </div>
+                                    <footer class="article-footer">
+                                        <a data-url="https://zhwangart.github.io/2018/12/06/Gitalk/" data-id="ck6x924xu000k6146knwu4v2y" class="article-share-link">
+                                            分享
+                                        </a>
+                                        
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gitalk/">Gitalk</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
-    </footer>
+                                    </footer>
 
-  </div>
+    </div>
 
-  
     
+        
   <nav class="article-nav">
     
       <a href="/2018/12/26/CSS-filter/" class="article-nav-link">
@@ -162,10 +161,11 @@
   </nav>
 
 
-  
+            
 
-  
-    
+                
+                    
+                        
   <div class="gitalk" id="gitalk-container"></div>
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
@@ -186,12 +186,9 @@
   gitalk.render('gitalk-container')
   </script>
 
-  
+                            
 
 </article>
-
-
-
 </section>
   <footer class="footer">
   <div class="outer">
@@ -205,7 +202,7 @@
 </ul>
     </div>
     <ul class="list-inline">
-      <li>&copy; 2019 数学家</li>
+      <li>&copy; 2020 数学家</li>
       <li>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></li>
       <li>Theme  <a href="https://github.com/zhwangart/hexo-theme-ocean">Ocean</a></li>
     </ul>
@@ -213,10 +210,8 @@
 </footer>
 
 </main>
-
-<aside class="sidebar sidebar-specter">
-  
-    <button class="navbar-toggle"></button>
+<aside class="sidebar">
+  <button class="navbar-toggle"></button>
 <nav class="navbar">
   
     <div class="logo">
@@ -271,8 +266,8 @@
   <div id="local-search-result" class="local-search-result"></div>
 </div>
 </div>
-  </aside>
-  <script src="/js/jquery-2.0.3.min.js"></script>
+</aside>
+<script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.justifiedGallery.min.js"></script>
 <script src="/js/lazyload.min.js"></script>
 <script src="/js/busuanzi-2.3.pure.min.js"></script>
