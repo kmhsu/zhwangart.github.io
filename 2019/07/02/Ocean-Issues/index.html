@@ -69,7 +69,7 @@
                                             
 
                                                 
-                                                                    <p>本文将 <a href="https://zhwangart.github.io/2018/11/30/Ocean/">Ocean 中文文档</a> 下边评论区中，一些 Hexo 博主们在使用 Ocean 时遇到的比较明显的问题整理归纳，当然有些问题并不是出在 Ocean 主题上，而是因为没有认真阅读 Hexo 的文档，我也简单写一下。<br><a id="more"></a></p>
+                                                                    <p>本文将 <a href="/2018/11/30/Ocean/">Ocean 中文文档</a> 下边评论区中，一些 Hexo 博主们在使用 Ocean 时遇到的比较明显的问题整理归纳，当然有些问题并不是出在 Ocean 主题上，而是因为没有认真阅读 Hexo 的文档，我也简单写一下。<br><a id="more"></a></p>
 <h2 id="1、认真阅读-Hexo-的文档"><a href="#1、认真阅读-Hexo-的文档" class="headerlink" title="1、认真阅读 Hexo 的文档"></a>1、认真阅读 Hexo 的文档</h2><h3 id="1-1-如何首页默认显示摘要？"><a href="#1-1-如何首页默认显示摘要？" class="headerlink" title="1.1 如何首页默认显示摘要？"></a>1.1 如何首页默认显示摘要？</h3><p>在写 Markdown 的时候自定义摘要文字：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">摘要...</span><br><span class="line"><span class="xml"><span class="comment">&lt;!--more--&gt;</span></span></span><br><span class="line">正文...</span><br></pre></td></tr></table></figure>
 <h3 id="1-2-怎么添加-相册、关于、标签…-页面？"><a href="#1-2-怎么添加-相册、关于、标签…-页面？" class="headerlink" title="1.2 怎么添加 相册、关于、标签… 页面？"></a>1.2 怎么添加 相册、关于、标签… 页面？</h3><p>首先更新 Ocean 代码，然后认真阅读 <a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">Hexo 文档</a>，有说明：</p>
@@ -77,7 +77,7 @@
 <p>你可以执行下列命令来创建一篇新文章。<br>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">[layout]</span> <span class="string">&lt;title&gt;</span></span><br></pre></td></tr></table></figure></p>
 </blockquote>
 <p>简单解释一下，<code>new</code> ：创建， <code>[layout]</code> ：文章布局（<code>page</code> 独立页面、<code>post</code> 发布博文），<code>&lt;title&gt;</code> ：标题。因为需要创建的都是独立页面，而不是发布博文，所以文章布局需要选择： <code>page</code> ，详细请参见 <a href="https://hexo.io/zh-cn/docs/writing" target="_blank" rel="noopener">Hexo 写作</a> 。</p>
-<p>因为 Ocean 有一个相册功能，所以我在 <a href="https://zhwangart.github.io/2018/11/30/Ocean/">Ocean 中文文档</a> 中以 gallery 为例也写过：</p>
+<p>因为 Ocean 有一个相册功能，所以我在 <a href="/2018/11/30/Ocean/">Ocean 中文文档</a> 中以 gallery 为例也写过：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">gallery</span></span><br></pre></td></tr></table></figure>
 <p>不需要写 <code>&lt;title&gt;</code>：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">gallery</span>      <span class="string">//</span> <span class="string">创建相册页面</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">about</span>        <span class="string">//</span> <span class="string">创建关于页面</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">tags</span>         <span class="string">//</span> <span class="string">创建标签页面</span></span><br><span class="line"><span class="string">$</span> <span class="string">hexo</span> <span class="string">new</span> <span class="string">page</span> <span class="string">categories</span>   <span class="string">//</span> <span class="string">创建分类页面</span></span><br></pre></td></tr></table></figure>
@@ -119,7 +119,7 @@
                                                                         
                                     </div>
                                     <footer class="article-footer">
-                                        <a data-url="https://zhwangart.github.io/2019/07/02/Ocean-Issues/" data-id="ck6xafp7r000ocx46cgzzp4p4" class="article-share-link">
+                                        <a data-url="https://zhwangart.github.io/2019/07/02/Ocean-Issues/" data-id="ck6yz20dl000lwo46rjmxcn7w" class="article-share-link">
                                             分享
                                         </a>
                                         
