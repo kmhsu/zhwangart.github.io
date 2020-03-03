@@ -1089,6 +1089,9 @@ img {
 .local-search {
   width: 100%;
 }
+.tocbot {
+  display: none;
+}
 @media (min-width: 768px) {
   .jumbotron {
     margin-bottom: 6rem;
@@ -1111,6 +1114,11 @@ img {
   }
   .local-search {
     width: 70rem;
+  }
+}
+@media (min-width: 1200px) {
+  .tocbot {
+    display: block;
   }
 }
 .list-unstyled,

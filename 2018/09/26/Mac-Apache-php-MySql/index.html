@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   
   
-    <meta name="keywords" content="Mac,php,apache,MySql,Hexo,Ocean,HTML5,CSS,UI,设计,WEB前端,摄影">
+    <meta name="keywords" content="macOS,php,apache,MySql,Hexo,Ocean,HTML5,CSS,UI,设计,WEB前端,摄影">
   
   
-    <meta name="description" content="数学家的 Hexo 博客，用于展示 zhwangart 设计的一款极简、静谧、纯净、轻盈的主题 Ocean。">
+    <meta name="description" content="在 macOS 下配置 php 开发环境：apache + php + mysql">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>在 Mac 下配置 php 开发环境：Apache + php + MySql |  数学家</title>
+  <title>在 macOS 下配置 php 开发环境：apache + php + mysql |  数学家</title>
   
     <link rel="shortcut icon" href="/favicon.ico">
   
@@ -32,7 +32,7 @@
                 
   
     <h1 class="article-title" itemprop="name">
-      在 Mac 下配置 php 开发环境：Apache + php + MySql
+      在 macOS 下配置 php 开发环境：apache + php + mysql
     </h1>
   
   
@@ -55,11 +55,7 @@
                         
                             
     <div class="tocbot"></div>
-
-
-
-
-
+    
                                 
 
                                     <div class="article-entry" itemprop="articleBody">
@@ -69,8 +65,8 @@
                                             
 
                                                 
-                                                                    <p>系统 OS X 10.8.5，Apache 是 Mac 自带的，主要是 PHP 的配置和 MySql 的配置，网上教程也挺多，本人也有参考，但是感觉有些步骤执行起来不是很顺畅，根据自己配置的过程整理。<br><a id="more"></a></p>
-<h3 id="一、启动Apache"><a href="#一、启动Apache" class="headerlink" title="一、启动Apache"></a>一、启动Apache</h3><p>有两种方法</p>
+                                                                    <p>系统 OS X 10.8.5，apache 是 Mac 自带的，主要是 php 的配置和 mysql 的配置，网上教程也挺多，本人也有参考，但是感觉有些步骤执行起来不是很顺畅，根据自己配置的过程整理。<br><a id="more"></a></p>
+<h3 id="一、启动-apache"><a href="#一、启动-apache" class="headerlink" title="一、启动 apache"></a>一、启动 apache</h3><p>有两种方法</p>
 <blockquote>
 <ol>
 <li>打开网络共享：“系统偏好设置”–“共享”，在“互联网共享”那一项前面打“√”。</li>
@@ -80,10 +76,10 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl start</span><br></pre></td></tr></table></figure>
 <p>这时需要输入密码，输入电脑密码即可，然后输入</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apachectl －v</span><br></pre></td></tr></table></figure>
-<p>可以查看到 Apache 的版本信息</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Server version: Apache/2.4.34 (Unix)</span><br><span class="line">Server built:   Aug 17 2018 16:29:43</span><br></pre></td></tr></table></figure>
+<p>可以查看到 apache 的版本信息</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Server version: apache/2.4.34 (Unix)</span><br><span class="line">Server built:   Aug 17 2018 16:29:43</span><br></pre></td></tr></table></figure>
 <p>此时在浏览器中输入 <a href="http://localhost" target="_blank" rel="noopener">http://localhost</a>，会出现 It works！ 的页面。</p>
-<h2 id="二、运行PHP"><a href="#二、运行PHP" class="headerlink" title="二、运行PHP"></a>二、运行PHP</h2><p>1、找到 Apache 的配置文件，在目录 <code>/etc/apache2/</code> 下，打开 Finder，选择 <code>前往 – 前往文件夹</code> ，输入 <code>/etc/apache2/</code> ，找到其中的 <strong>httpd.conf</strong> 文件，选择用文稿打开进行编辑，点按 Command+F，搜索 <code>#LoadModule php</code> 能看到：</p>
+<h2 id="二、运行-php"><a href="#二、运行-php" class="headerlink" title="二、运行 php"></a>二、运行 php</h2><p>1、找到 apache 的配置文件，在目录 <code>/etc/apache2/</code> 下，打开 Finder，选择 <code>前往 – 前往文件夹</code> ，输入 <code>/etc/apache2/</code> ，找到其中的 <strong>httpd.conf</strong> 文件，选择用文稿打开进行编辑，点按 Command+F，搜索 <code>#LoadModule php</code> 能看到：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#LoadModule php7_module libexec/apache2/libphp7.so</span><br></pre></td></tr></table></figure>
 <p>把前边的注释 <code>#</code> 号去掉，然后保存，如果出现文本锁定，无法解锁的情况，解决办法有两种：</p>
 <blockquote>
@@ -92,13 +88,13 @@
 <li>将该文件复制到桌面，进行修改，修改后再复制到原来的文件夹替换之前的文件即可。</li>
 </ol>
 </blockquote>
-<p>2、重启 Apache，在终端输入</p>
+<p>2、重启 apache，在终端输入</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apachectl restart</span><br></pre></td></tr></table></figure>
 <p>PHP就可以用了。</p>
 <p>3、在终端输入</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /Library/WebServer/Documents/index.html.en /Library/WebServer/Documents/info.php</span><br></pre></td></tr></table></figure>
-<p>即在 Apache 的根目录下复制 index.html.en 文件并重命名为 info.php。</p>
-<p>4、打开 info.php，在 It works 后面加上 ，然后再次重启 Apache，在浏览器中输入 <a href="http://localhost/info.php" target="_blank" rel="noopener">http://localhost/info.php</a>，会出现一个显示 PHP 信息的页面，如图所示。</p>
+<p>即在 apache 的根目录下复制 index.html.en 文件并重命名为 info.php。</p>
+<p>4、打开 info.php，在 It works 后面加上 ，然后再次重启 apache，在浏览器中输入 <a href="http://localhost/info.php" target="_blank" rel="noopener">http://localhost/info.php</a>，会出现一个显示 PHP 信息的页面，如图所示。</p>
 <p><img src="https://raw.githubusercontent.com/zhwangart/hexo-zh-src/master/post/php_v7.1.19.jpg" alt="php"></p>
 <h2 id="三、配置-MySql"><a href="#三、配置-MySql" class="headerlink" title="三、配置 MySql"></a>三、配置 MySql</h2><p>1、在 <a href="http://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">http://dev.mysql.com/downloads/mysql/</a> 网站上，选择 Mac OS X 平台，然后选择图中的下载，我开始下载错了，安装出错，后来下载图中的版本安装成功。</p>
 <p><img src="https://raw.githubusercontent.com/zhwangart/hexo-zh-src/master/post/MySQL_Community_Server_v8012.jpg" alt="MySQL"></p>
@@ -119,11 +115,11 @@
                                                                         
                                     </div>
                                     <footer class="article-footer">
-                                        <a data-url="https://zhwangart.github.io/2018/09/26/Mac-Apache-php-MySql/" data-id="ck6yz20dd000cwo46qcxdyj4g" class="article-share-link">
+                                        <a data-url="https://zhwangart.github.io/2018/09/26/Mac-Apache-php-MySql/" data-id="ck7bndxtg000jli46gprfeju1" class="article-share-link">
                                             分享
                                         </a>
                                         
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apache/">apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apache/">apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/">macOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
 
                                     </footer>
 
@@ -137,7 +133,7 @@
         <strong class="article-nav-caption">前一篇</strong>
         <div class="article-nav-title">
           
-            在 Mac 环境编辑 Apache 根目录
+            在 macOS 环境编辑 apache 根目录
           
         </div>
       </a>
