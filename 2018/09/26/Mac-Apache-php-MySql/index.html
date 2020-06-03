@@ -25,11 +25,11 @@
 <main class="content">
   <section class="outer">
   <article id="post-Mac-Apache-php-MySql" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
-
-    <div class="article-inner">
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
         
-            <header class="article-header">
-                
   
     <h1 class="article-title" itemprop="name">
       在 macOS 下配置 php 开发环境：apache + php + mysql
@@ -40,32 +40,35 @@
 
 
 
-            </header>
-            
+      </header>
+    
 
-                
-                    <div class="article-meta">
-                        <a href="/2018/09/26/Mac-Apache-php-MySql/" class="article-date">
+    
+      <div class="article-meta">
+        <a href="/2018/09/26/Mac-Apache-php-MySql/" class="article-date">
   <time datetime="2018-09-26T06:06:00.000Z" itemprop="datePublished">2018-09-26</time>
 </a>
-                            
-                    </div>
-                    
-
-                        
-                            
-    <div class="tocbot"></div>
+        
+      </div>
     
-                                
 
-                                    <div class="article-entry" itemprop="articleBody">
-                                        
+    
+      
+    <div class="tocbot"></div>
 
 
-                                            
 
-                                                
-                                                                    <p>系统 OS X 10.8.5，apache 是 Mac 自带的，主要是 php 的配置和 mysql 的配置，网上教程也挺多，本人也有参考，但是感觉有些步骤执行起来不是很顺畅，根据自己配置的过程整理。<br><a id="more"></a></p>
+
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+      
+        <p>系统 OS X 10.8.5，apache 是 Mac 自带的，主要是 php 的配置和 mysql 的配置，网上教程也挺多，本人也有参考，但是感觉有些步骤执行起来不是很顺畅，根据自己配置的过程整理。<br><a id="more"></a></p>
 <h3 id="一、启动-apache"><a href="#一、启动-apache" class="headerlink" title="一、启动 apache"></a>一、启动 apache</h3><p>有两种方法</p>
 <blockquote>
 <ol>
@@ -95,9 +98,9 @@
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp /Library/WebServer/Documents/index.html.en /Library/WebServer/Documents/info.php</span><br></pre></td></tr></table></figure>
 <p>即在 apache 的根目录下复制 index.html.en 文件并重命名为 info.php。</p>
 <p>4、打开 info.php，在 It works 后面加上 ，然后再次重启 apache，在浏览器中输入 <a href="http://localhost/info.php" target="_blank" rel="noopener">http://localhost/info.php</a>，会出现一个显示 PHP 信息的页面，如图所示。</p>
-<p><img src="https://raw.githubusercontent.com/zhwangart/hexo-zh-src/master/post/php_v7.1.19.jpg" alt="php"></p>
+<p><img src="https://s1.ax1x.com/2020/05/18/YWW62D.jpg" alt="php"></p>
 <h2 id="三、配置-MySql"><a href="#三、配置-MySql" class="headerlink" title="三、配置 MySql"></a>三、配置 MySql</h2><p>1、在 <a href="http://dev.mysql.com/downloads/mysql/" target="_blank" rel="noopener">http://dev.mysql.com/downloads/mysql/</a> 网站上，选择 Mac OS X 平台，然后选择图中的下载，我开始下载错了，安装出错，后来下载图中的版本安装成功。</p>
-<p><img src="https://raw.githubusercontent.com/zhwangart/hexo-zh-src/master/post/MySQL_Community_Server_v8012.jpg" alt="MySQL"></p>
+<p><img src="https://s1.ax1x.com/2020/05/18/YWWD56.jpg" alt="MySQL"></p>
 <p>双击第一个安装，然后双击第三个安装，然后双击第二个，第二个是配置文件，安装之后，可以在系统偏好设置中选择启动或者关闭 MySql。</p>
 <p>2、修改密码</p>
 <p>在终端输入，这里修改密码为 12345，也可为其他，自定义即可</p>
@@ -112,21 +115,20 @@
 <p>5、在浏览器中输入 <code>http://localhost/phpmyadmin</code>，输入用户名 <code>root</code>, 和刚刚自己所更改的密码，如果未更改密码，则按照上一步骤中的无密码操作，然后就可以直接登陆了。</p>
 <p>PS：到此配置完成，进行 PHP 开发还需下载一个 PHP 开发工具，Mac 下的 PHP 开发工具也挺多，大家自行谷歌百度，需要提醒的是，安装好开发工具之后，在建议 PHP 工程时，记得要将工程放在和 phpMyadmin 同一个目录文件下，可新建一个文件夹专门用来存放 PHP 工程，否则，是无法运行的。</p>
 
-                                                                        
-                                    </div>
-                                    <footer class="article-footer">
-                                        <a data-url="https://zhwangart.github.io/2018/09/26/Mac-Apache-php-MySql/" data-id="ck7bndxtg000jli46gprfeju1" class="article-share-link">
-                                            分享
-                                        </a>
-                                        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhwangart.github.io/2018/09/26/Mac-Apache-php-MySql/" data-id="ckazhfh4q000jq746q06dv9iw"
+         class="article-share-link">分享</a>
+      
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apache/">apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/">macOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/php/">php</a></li></ul>
 
-                                    </footer>
+    </footer>
 
-    </div>
+  </div>
 
+  
     
-        
   <nav class="article-nav">
     
       <a href="/2018/09/26/Mac-Apache-root/" class="article-nav-link">
@@ -147,11 +149,10 @@
   </nav>
 
 
-            
+  
 
-                
-                    
-                        
+  
+    
   <div class="gitalk" id="gitalk-container"></div>
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
@@ -172,9 +173,12 @@
   gitalk.render('gitalk-container')
   </script>
 
-                            
+  
 
 </article>
+
+
+
 </section>
   <footer class="footer">
   <div class="outer">

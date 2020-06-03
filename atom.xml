@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhwangart.github.io/"/>
-  <updated>2020-02-28T15:51:29.723Z</updated>
+  <updated>2020-04-16T16:57:50.000Z</updated>
   <id>https://zhwangart.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Bulma 定制</title>
+    <link href="https://zhwangart.github.io/2020/03/11/Bulma-customizable/"/>
+    <id>https://zhwangart.github.io/2020/03/11/Bulma-customizable/</id>
+    <published>2020-03-10T17:11:09.000Z</published>
+    <updated>2020-04-16T16:57:50.000Z</updated>
+    
+    <summary type="html">
+    
+      Bulma 是一个轻量级、可定制的纯 CSS 框架。因为没有 JavaScript 所以可以在任何开发环境中轻松实现。所有样式都基于 class，只需为 html 元素指定 class，样式立刻生效。
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://zhwangart.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS" scheme="https://zhwangart.github.io/tags/CSS/"/>
+    
+      <category term="Bulma" scheme="https://zhwangart.github.io/tags/Bulma/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Video 微信浏览器自动播放和默认全屏</title>
     <link href="https://zhwangart.github.io/2020/02/28/Video-autoplay-fullscreen-WeChat/"/>
     <id>https://zhwangart.github.io/2020/02/28/Video-autoplay-fullscreen-WeChat/</id>
     <published>2020-02-28T13:45:24.000Z</published>
-    <updated>2020-02-28T15:51:29.723Z</updated>
+    <updated>2020-02-28T15:51:28.000Z</updated>
     
     <summary type="html">
     
@@ -43,7 +65,7 @@
     <link href="https://zhwangart.github.io/2020/02/24/Photoshop-Blending-modes/"/>
     <id>https://zhwangart.github.io/2020/02/24/Photoshop-Blending-modes/</id>
     <published>2020-02-24T09:58:01.000Z</published>
-    <updated>2020-02-28T15:41:29.586Z</updated>
+    <updated>2020-05-18T03:35:42.000Z</updated>
     
     <summary type="html">
     
@@ -59,11 +81,29 @@
   </entry>
   
   <entry>
+    <title>macOS 原生输入法不好用吗？</title>
+    <link href="https://zhwangart.github.io/2020/02/24/macOS-Input-method/"/>
+    <id>https://zhwangart.github.io/2020/02/24/macOS-Input-method/</id>
+    <published>2020-02-24T09:35:02.000Z</published>
+    <updated>2020-02-28T15:29:08.000Z</updated>
+    
+    <summary type="html">
+    
+      macOS 原生输入法，比起其它输入法来毫不逊色。而且简洁不花哨，避免隐私信息泄露。iCloud 还会帮助同步你的输入习惯，手机电脑的输入法不用分开调教，更不要提它还自带全套 emoji 表情…
+    
+    </summary>
+    
+    
+      <category term="macOS" scheme="https://zhwangart.github.io/tags/macOS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Ocean 中使用 Valine</title>
     <link href="https://zhwangart.github.io/2020/02/22/Valine/"/>
     <id>https://zhwangart.github.io/2020/02/22/Valine/</id>
     <published>2020-02-21T17:46:36.000Z</published>
-    <updated>2020-02-28T15:20:05.369Z</updated>
+    <updated>2020-02-28T15:20:04.000Z</updated>
     
     <summary type="html">
     
@@ -87,7 +127,7 @@
     <link href="https://zhwangart.github.io/2020/02/02/APP-macOS-Catalina-Error/"/>
     <id>https://zhwangart.github.io/2020/02/02/APP-macOS-Catalina-Error/</id>
     <published>2020-02-02T10:51:43.000Z</published>
-    <updated>2020-02-28T15:24:46.063Z</updated>
+    <updated>2020-05-18T07:59:54.000Z</updated>
     
     <summary type="html">
     
@@ -113,7 +153,7 @@
     <link href="https://zhwangart.github.io/2019/12/01/macOS-Launchpad-rows-cloumns/"/>
     <id>https://zhwangart.github.io/2019/12/01/macOS-Launchpad-rows-cloumns/</id>
     <published>2019-12-01T13:53:34.000Z</published>
-    <updated>2020-02-28T15:28:58.942Z</updated>
+    <updated>2020-02-28T15:28:58.000Z</updated>
     
     <summary type="html">
     
@@ -135,7 +175,7 @@
     <link href="https://zhwangart.github.io/2019/09/24/Film-FA-190616/"/>
     <id>https://zhwangart.github.io/2019/09/24/Film-FA-190616/</id>
     <published>2019-09-24T09:46:20.000Z</published>
-    <updated>2019-09-25T06:43:56.000Z</updated>
+    <updated>2020-05-18T06:51:36.000Z</updated>
     
     <summary type="html">
     
@@ -155,7 +195,7 @@
     <link href="https://zhwangart.github.io/2019/08/08/Thunder-pluglns/"/>
     <id>https://zhwangart.github.io/2019/08/08/Thunder-pluglns/</id>
     <published>2019-08-08T03:50:17.000Z</published>
-    <updated>2020-02-24T10:10:53.124Z</updated>
+    <updated>2020-02-24T10:10:52.000Z</updated>
     
     <summary type="html">
     
@@ -175,7 +215,7 @@
     <link href="https://zhwangart.github.io/2019/07/16/APP-Design-LightWAN/"/>
     <id>https://zhwangart.github.io/2019/07/16/APP-Design-LightWAN/</id>
     <published>2019-07-16T08:57:16.000Z</published>
-    <updated>2019-07-16T09:05:42.000Z</updated>
+    <updated>2020-05-18T08:01:50.000Z</updated>
     
     <summary type="html">
     
@@ -195,7 +235,7 @@
     <link href="https://zhwangart.github.io/2019/07/03/Bird/"/>
     <id>https://zhwangart.github.io/2019/07/03/Bird/</id>
     <published>2019-07-03T03:33:38.000Z</published>
-    <updated>2020-02-28T15:42:26.237Z</updated>
+    <updated>2020-05-18T08:00:00.000Z</updated>
     
     <summary type="html">
     
@@ -215,7 +255,7 @@
     <link href="https://zhwangart.github.io/2019/07/02/Ocean-Issues/"/>
     <id>https://zhwangart.github.io/2019/07/02/Ocean-Issues/</id>
     <published>2019-07-02T03:11:11.000Z</published>
-    <updated>2020-02-28T15:50:30.666Z</updated>
+    <updated>2020-03-18T04:29:50.000Z</updated>
     
     <summary type="html">
     
@@ -235,7 +275,7 @@
     <link href="https://zhwangart.github.io/2019/05/07/CANONET-QL17-GIII-DOC/"/>
     <id>https://zhwangart.github.io/2019/05/07/CANONET-QL17-GIII-DOC/</id>
     <published>2019-05-07T02:34:49.000Z</published>
-    <updated>2020-02-28T15:23:25.265Z</updated>
+    <updated>2020-05-18T07:06:06.000Z</updated>
     
     <summary type="html">
     
@@ -257,7 +297,7 @@
     <link href="https://zhwangart.github.io/2019/04/29/Little-raccoon/"/>
     <id>https://zhwangart.github.io/2019/04/29/Little-raccoon/</id>
     <published>2019-04-29T11:04:29.000Z</published>
-    <updated>2020-02-28T15:42:21.011Z</updated>
+    <updated>2020-02-28T15:42:20.000Z</updated>
     
     <summary type="html">
     
@@ -277,7 +317,7 @@
     <link href="https://zhwangart.github.io/2019/04/26/Mobile-html-meta-property-settings/"/>
     <id>https://zhwangart.github.io/2019/04/26/Mobile-html-meta-property-settings/</id>
     <published>2019-04-26T10:11:49.000Z</published>
-    <updated>2020-02-28T15:50:20.048Z</updated>
+    <updated>2020-02-28T15:50:20.000Z</updated>
     
     <summary type="html">
     
@@ -299,7 +339,7 @@
     <link href="https://zhwangart.github.io/2019/03/19/SublimeText-PackageControl/"/>
     <id>https://zhwangart.github.io/2019/03/19/SublimeText-PackageControl/</id>
     <published>2019-03-19T02:42:22.000Z</published>
-    <updated>2020-02-28T15:53:23.656Z</updated>
+    <updated>2020-05-18T03:34:26.000Z</updated>
     
     <summary type="html">
     
@@ -319,7 +359,7 @@
     <link href="https://zhwangart.github.io/2019/02/22/Photosho-shortcut-45/"/>
     <id>https://zhwangart.github.io/2019/02/22/Photosho-shortcut-45/</id>
     <published>2019-02-22T02:42:00.000Z</published>
-    <updated>2020-02-28T15:41:23.048Z</updated>
+    <updated>2020-05-18T03:31:48.000Z</updated>
     
     <summary type="html">
     
@@ -339,7 +379,7 @@
     <link href="https://zhwangart.github.io/2018/12/26/CSS-filter/"/>
     <id>https://zhwangart.github.io/2018/12/26/CSS-filter/</id>
     <published>2018-12-26T02:03:00.000Z</published>
-    <updated>2020-02-28T15:33:52.481Z</updated>
+    <updated>2020-02-28T15:33:52.000Z</updated>
     
     <summary type="html">
     
@@ -359,7 +399,7 @@
     <link href="https://zhwangart.github.io/2018/12/06/Gitalk/"/>
     <id>https://zhwangart.github.io/2018/12/06/Gitalk/</id>
     <published>2018-12-06T07:11:49.000Z</published>
-    <updated>2020-02-28T15:22:36.381Z</updated>
+    <updated>2020-05-18T07:54:08.000Z</updated>
     
     <summary type="html">
     
@@ -383,7 +423,7 @@
     <link href="https://zhwangart.github.io/2018/11/30/Ocean/"/>
     <id>https://zhwangart.github.io/2018/11/30/Ocean/</id>
     <published>2018-11-30T03:13:00.000Z</published>
-    <updated>2020-02-28T15:50:43.326Z</updated>
+    <updated>2020-04-16T15:36:18.000Z</updated>
     
     <summary type="html">
     
@@ -395,48 +435,6 @@
       <category term="Hexo" scheme="https://zhwangart.github.io/tags/Hexo/"/>
     
       <category term="Ocean" scheme="https://zhwangart.github.io/tags/Ocean/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown 基本语法在 Ocean 中的展现形式</title>
-    <link href="https://zhwangart.github.io/2018/11/29/Markdown/"/>
-    <id>https://zhwangart.github.io/2018/11/29/Markdown/</id>
-    <published>2018-11-29T03:13:00.000Z</published>
-    <updated>2020-02-28T15:38:05.847Z</updated>
-    
-    <summary type="html">
-    
-      Markdown 基本语法在 Ocean 中的展现形式，为了为自己查阅语法方便，也为想要使用 Ocean 的同学们提供示例，进而快速认知 Ocean 是否适合你的 Hexo ！
-    
-    </summary>
-    
-    
-      <category term="Ocean" scheme="https://zhwangart.github.io/tags/Ocean/"/>
-    
-      <category term="Markdown" scheme="https://zhwangart.github.io/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>iterm2 快捷键</title>
-    <link href="https://zhwangart.github.io/2018/10/23/iterm2-%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    <id>https://zhwangart.github.io/2018/10/23/iterm2-快捷键/</id>
-    <published>2018-10-23T08:09:00.000Z</published>
-    <updated>2020-02-28T15:36:05.021Z</updated>
-    
-    <summary type="html">
-    
-      在开发中我们肯定经常使用终端命令行，然而 Mac 自带的终端好像并不是那么好用，所以出现了 iTerm 这个软件，这篇文章总结了 iTerm 的快捷键，希望对大家有帮助。
-    
-    </summary>
-    
-    
-      <category term="macOS" scheme="https://zhwangart.github.io/tags/macOS/"/>
-    
-      <category term="iTerm" scheme="https://zhwangart.github.io/tags/iTerm/"/>
-    
-      <category term="iTerm2" scheme="https://zhwangart.github.io/tags/iTerm2/"/>
     
   </entry>
   

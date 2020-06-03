@@ -25,11 +25,11 @@
 <main class="content">
   <section class="outer">
   <article id="post-Mac-Apache-root" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
-
-    <div class="article-inner">
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
         
-            <header class="article-header">
-                
   
     <h1 class="article-title" itemprop="name">
       在 macOS 环境编辑 apache 根目录
@@ -40,32 +40,35 @@
 
 
 
-            </header>
-            
+      </header>
+    
 
-                
-                    <div class="article-meta">
-                        <a href="/2018/09/26/Mac-Apache-root/" class="article-date">
+    
+      <div class="article-meta">
+        <a href="/2018/09/26/Mac-Apache-root/" class="article-date">
   <time datetime="2018-09-26T06:46:00.000Z" itemprop="datePublished">2018-09-26</time>
 </a>
-                            
-                    </div>
-                    
-
-                        
-                            
-    <div class="tocbot"></div>
+        
+      </div>
     
-                                
 
-                                    <div class="article-entry" itemprop="articleBody">
-                                        
+    
+      
+    <div class="tocbot"></div>
 
 
-                                            
 
-                                                
-                                                                    <p>apache 的配置文件，在目录 <code>/etc/apache2/</code> 下，打开 Finder，选择 <code>前往 – 前往文件夹</code>，输入 <code>/etc/apache2/</code><br><a id="more"></a></p>
+
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+      
+        <p>apache 的配置文件，在目录 <code>/etc/apache2/</code> 下，打开 Finder，选择 <code>前往 – 前往文件夹</code>，输入 <code>/etc/apache2/</code><br><a id="more"></a></p>
 <h2 id="httpd-conf"><a href="#httpd-conf" class="headerlink" title="httpd.conf"></a>httpd.conf</h2><p>1、在 <code>/etc/apache2/</code> 中找到 <strong>httpd.conf</strong> 文件打开，我选择用 Sublime Text，然后找到：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">Directory</span> /&gt;</span></span><br><span class="line">    AllowOverride none</span><br><span class="line">    Require all denied</span><br><span class="line"><span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>修改为：</p>
@@ -92,21 +95,20 @@
 <p>3、运行 <code>sudo vi /etc/hosts</code> ，打开 hosts 配置文件，加入 <code>127.0.0.1 mysites</code> ，这样就可以配置完成 sites 虚拟主机了，可以访问 <code>http://mysites</code> 了，在 10.8 之前 Mac OS X 版本其内容和 <code>http://localhost/~[用户名]</code> 完全一致。</p>
 <p>4、注意，记录 log 的 <code>ErrorLog &quot;/private/var/log/apache2/sites-error_log&quot;</code>也可以删掉，但记录日志其实是一个好习惯，在出现问题时可以帮助我们判断。如果保留这些log代码，一定log文件路径都是存在的，如果随便修改一个不存在的，会导致 apache 无法服务而没有错误提示，这个比较恶心。</p>
 
-                                                                        
-                                    </div>
-                                    <footer class="article-footer">
-                                        <a data-url="https://zhwangart.github.io/2018/09/26/Mac-Apache-root/" data-id="ck7bndxti000lli468cyqrr11" class="article-share-link">
-                                            分享
-                                        </a>
-                                        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhwangart.github.io/2018/09/26/Mac-Apache-root/" data-id="ckazhfh4s000oq7468wkibdbp"
+         class="article-share-link">分享</a>
+      
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/apache/">apache</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/macOS/">macOS</a></li></ul>
 
-                                    </footer>
+    </footer>
 
-    </div>
+  </div>
 
+  
     
-        
   <nav class="article-nav">
     
       <a href="/2018/10/23/iterm2-快捷键/" class="article-nav-link">
@@ -127,11 +129,10 @@
   </nav>
 
 
-            
+  
 
-                
-                    
-                        
+  
+    
   <div class="gitalk" id="gitalk-container"></div>
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
@@ -152,9 +153,12 @@
   gitalk.render('gitalk-container')
   </script>
 
-                            
+  
 
 </article>
+
+
+
 </section>
   <footer class="footer">
   <div class="outer">
